@@ -1,0 +1,17 @@
+#id { width: 6%; }
+
+#quantity { width: 8%; }
+
+#price { width: 10%; }
+
+#note_admin { width: 8%; }
+
+.tablenav.top { margin-bottom: 15px; }
+
+.tablenav-pages-navspan { height: auto; }
+
+.tablenav-pages .current-page { height: 26px; }
+
+.form-table-edit { background-color: #fff; display: inline-block; padding: 20px; border: 1px solid #ddd; width: 97%; margin-bottom: 40px; margin-top: 20px; }
+
+/*# sourceMappingURL=pokamodule.css.map */

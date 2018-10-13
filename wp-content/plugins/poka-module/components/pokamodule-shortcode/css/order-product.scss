@@ -1,0 +1,38 @@
+.page-order-product{
+    color: #444;
+    font-size: 16px;
+
+    .info-product{
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        margin-bottom: 20px;
+    }
+
+    .title-product{
+        font-weight: bold;
+
+        label{
+            display: inline-block;
+            font-weight: normal;
+        }
+        a{
+            &:hover{
+                color: #F8B91C;
+            }
+        }
+    }
+
+    .image-product{
+        font-weight: bold;
+
+        label{
+            font-weight: normal;
+            display: inline-block;
+        }
+    }
+
+    img{
+        width: 100px;
+    }
+}

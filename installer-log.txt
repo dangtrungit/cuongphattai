@@ -1,0 +1,211 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.40
+* STEP-1 START @ 04:15:45
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.1.1 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1
+DOC ROOT:	C:/xampp/htdocs/democuongphattai
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/democuongphattai/installer.php
+SAFE MODE :	0
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20180619_pokamedia_65c23ba81fcde8987698180619101659_archive.zip
+SIZE:	35.08MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 6881
+    [filename] => C:\xampp\htdocs\democuongphattai\20180619_pokamedia_65c23ba81fcde8987698180619101659_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2018-10-12 16:15:54
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.181012161554.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 04:15:54 - RUNTIME: 8.7483 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 04:16:17
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.21 -- Build Server: 10.1.32
+FILE SIZE:	database.sql (490.69KB) - installer-data.sql (490.69KB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/democuongphattai/installer-data.sql]
+COLLATE RESET:	On
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	40
+QUERIES RAN:	349
+
+poka_commentmeta: (0)
+poka_comments: (0)
+poka_duplicator_packages: (1)
+poka_formcraft_3_files: (0)
+poka_formcraft_3_forms: (0)
+poka_formcraft_3_progress: (0)
+poka_formcraft_3_submissions: (0)
+poka_formcraft_3_views: (0)
+poka_itsec_distributed_storage: (0)
+poka_itsec_lockouts: (0)
+poka_itsec_logs: (0)
+poka_itsec_temp: (0)
+poka_links: (0)
+poka_options: (381)
+poka_postmeta: (8)
+poka_posts: (7)
+poka_term_relationships: (0)
+poka_term_taxonomy: (15)
+poka_termmeta: (0)
+poka_terms: (15)
+poka_usermeta: (37)
+poka_users: (1)
+poka_wc_download_log: (0)
+poka_wc_webhooks: (0)
+poka_woocommerce_api_keys: (0)
+poka_woocommerce_attribute_taxonomies: (0)
+poka_woocommerce_downloadable_product_permissions: (0)
+poka_woocommerce_log: (0)
+poka_woocommerce_order_itemmeta: (0)
+poka_woocommerce_order_items: (0)
+poka_woocommerce_payment_tokenmeta: (0)
+poka_woocommerce_payment_tokens: (0)
+poka_woocommerce_sessions: (1)
+poka_woocommerce_shipping_zone_locations: (0)
+poka_woocommerce_shipping_zone_methods: (0)
+poka_woocommerce_shipping_zones: (0)
+poka_woocommerce_tax_rate_locations: (0)
+poka_woocommerce_tax_rates: (0)
+poka_yoast_seo_links: (0)
+poka_yoast_seo_meta: (8)
+
+Removed '64' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 1.3184 sec.
+STEP-2 COMPLETE @ 04:16:19 - RUNTIME: 1.9226 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 04:16:27
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+poka_commentmeta^ (0)
+poka_comments^ (0)
+poka_duplicator_packages^ (0)
+poka_formcraft_3_files^ (0)
+poka_formcraft_3_forms^ (0)
+poka_formcraft_3_progress^ (0)
+poka_formcraft_3_submissions^ (0)
+poka_formcraft_3_views^ (0)
+poka_itsec_distributed_storage^ (0)
+poka_itsec_lockouts^ (0)
+poka_itsec_logs^ (0)
+poka_itsec_temp^ (0)
+poka_links^ (0)
+poka_options~ (316)
+poka_postmeta~ (8)
+poka_posts~ (7)
+poka_term_relationships^ (0)
+poka_term_taxonomy~ (15)
+poka_termmeta^ (0)
+poka_terms~ (15)
+poka_usermeta~ (37)
+poka_users~ (1)
+poka_wc_download_log^ (0)
+poka_wc_webhooks^ (0)
+poka_woocommerce_api_keys^ (0)
+poka_woocommerce_attribute_taxonomies^ (0)
+poka_woocommerce_downloadable_product_permissions^ (0)
+poka_woocommerce_log^ (0)
+poka_woocommerce_order_itemmeta^ (0)
+poka_woocommerce_order_items^ (0)
+poka_woocommerce_payment_tokenmeta^ (0)
+poka_woocommerce_payment_tokens^ (0)
+poka_woocommerce_sessions~ (1)
+poka_woocommerce_shipping_zone_locations^ (0)
+poka_woocommerce_shipping_zone_methods^ (0)
+poka_woocommerce_shipping_zones^ (0)
+poka_woocommerce_tax_rate_locations^ (0)
+poka_woocommerce_tax_rates^ (0)
+poka_yoast_seo_links^ (0)
+poka_yoast_seo_meta~ (8)
+--------------------------------------
+Search1:	'C:/xampp/htdocs/pokamediashopping' 
+Change1:	'C:/xampp/htdocs/democuongphattai' 
+Search2:	'C:\/xampp\/htdocs\/pokamediashopping' 
+Change2:	'C:\/xampp\/htdocs\/democuongphattai' 
+Search3:	'C%3A%2Fxampp%2Fhtdocs%2Fpokamediashopping%2F' 
+Change3:	'C%3A%2Fxampp%2Fhtdocs%2Fdemocuongphattai%2F' 
+Search4:	'C:\xampp\htdocs\pokamediashopping' 
+Change4:	'C:/xampp/htdocs/democuongphattai' 
+Search5:	'//localhost:8080/pokamediashopping' 
+Change5:	'//localhost:8888/democuongphattai' 
+Search6:	'\/\/localhost:8080\/pokamediashopping' 
+Change6:	'\/\/localhost:8888\/democuongphattai' 
+Search7:	'%2F%2Flocalhost%3A8080%2Fpokamediashopping' 
+Change7:	'%2F%2Flocalhost%3A8888%2Fdemocuongphattai' 
+SCANNED:	Tables:40 	|	 Rows:408 	|	 Cells:1793 
+UPDATED:	Tables:1 	|	 Rows:16 	|	 Cells:16 
+ERRORS:		0 
+RUNTIME:	0.243000 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 04:16:27 - RUNTIME: 0.2704 sec.
+
+
