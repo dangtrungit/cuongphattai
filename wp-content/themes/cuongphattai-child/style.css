@@ -10,16 +10,152 @@ Domain Path: /languages/
 */
 
 a{
-	color: red !important;
+	/*color: red !important;*/
+	text-decoration: none;
+	font-size: 16px;
+
+	vertical-align: center ;
 }
 
+p{
+    /*display: inline-flex;*/
+    /*float: right;*/
+}
+
+
+aside .widget_sow-editor{
+	display: block;
+	height: auto;
+}
+
+
+#page #topbar ul li a img {
+
+	display: inline-block;
+	float: left;
+	padding-right: 5px;
+
+}
+img {
+
+	height: 100%;
+	max-width: 100%;
+
+}
+#panel-5-1-0-0{
+
+}
+#pl-w5bc4412e54701 {
+
+}
+
+
+#pg-w5bc4412e54701-0 {
+	margin: 20px auto;
+	padding: auto;
+	background-color: #d1d6d7;
+	width: 1280px;
+	margin-left: -100px;
+	justify-content: left;
+	align-content: flex-start;
+	align-items: start;
+}
+#page #topbar{
+	background-color: #dc6626;
+	height: 50px;
+}
+
+#page #topbar ul li a{
+	color: white;
+	display: inline-block;
+	vertical-align: top ;
+	height: auto;
+	/*text-align: right;*/
+	/*vertical-align: top;*/
+}
+
+#page .topbar ul li a image{
+	height: auto;
+}
+#topbar {
+	width: 100%;
+	min-width: 1060px;
+	background: #f4f4f4;
+	border-bottom: 1px solid #d4d4d4;
+	position: relative;
+	z-index: 1000;
+}
+
+#topbar #topbar-widgets {
+	content: "";
+	display: table;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.image-login{
+    /*height: 1px;*/
+    height: auto;
+    margin: auto;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#page .topbar-icon {
+	float: right;
+	height: 100% !important;
+
+}
+.container .topbar-icon ul {
+	display: inline-flex;
+	list-style-type:none;
+
+}
+.textwidget > :last-child {
+	margin-bottom: 0;
+}
+#page #topbar ul {
+	/*display: inline-block !important;*/
+	text-align: right;
+	border-right: 1px solid #fff;
+	float: left;
+	line-height: 100%;
+	padding: 5px 20px;
+}
+/*#topbar-widgets{*/
+	/*display: inline-flex;*/
+/*}*/
+.alignleft{
+    height: 19px;
+    margin: 5px;
+}
+
+#topbar #topbar-widgets .widgets.widgets-1 .widget {
+	width: 100%;
+}
+#masthead .menu-item a:hover {
+	content: "\f35a";
+	font-family: 'FontAwesome' !important;
+	color: #317799;
+	font-size: 17px;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+#topbar-icon{
+
+    float: right;
+    display: inline-flex;
+
+}
 
 body.responsive .container{
-	max-width: 1280px !important;
+	width: 100%;
+	max-width: 1210px;
 }
+
 .container{
 	width: 1280px !important;
 }
+
 .clear{
 	clear: both;
 }
