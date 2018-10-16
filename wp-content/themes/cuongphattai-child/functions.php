@@ -50,5 +50,17 @@ function ilc_mce_buttons($buttons){
 	);
 	return $buttons;
 }
+
+// hien thi tren topbar
+register_sidebar(array(
+    'name' => 'hiển thị thông tin topbar',
+    'id' => 'pk-topbar',
+    'description' => 'Hiển thị trên thanh topbar',
+    'before_widget' => '<div id="pk-topbar" class="widget pk-topbar-widget">',
+    'after_widget' => '</div>',
+    'before_title' => '',
+    'after_title' => ''
+));
+
 add_filter("mce_buttons_2", "ilc_mce_buttons");
 load_child_theme_textdomain('siteorigin-north', get_stylesheet_directory() . '/languages/');
