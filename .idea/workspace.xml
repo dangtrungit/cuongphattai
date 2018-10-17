@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f1a20735-7f2f-4cce-a5af-d42b8fe2fe57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cuongphattai-child/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cuongphattai-child/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cuongphattai-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cuongphattai-child/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-100x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-300x258.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-300x300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416064604.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416095257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416163833-100x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416163833-150x129.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416163833.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo-e1539416201350.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2018/10/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-image-default-bd5cd9da0588.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,16 +16,19 @@
     <session id="-748492498">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,13 +53,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1638" />
+          <entry key="css" value="2037" />
           <entry key="php" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1638" />
+          <entry key="CSS" value="2037" />
           <entry key="PHP" value="3" />
         </counts>
       </usages-collector>
@@ -87,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai-child/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="207" column="24" lean-forward="true" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -96,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai-child/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
+            <state relative-caret-position="990">
               <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
             </state>
           </provider>
@@ -147,8 +139,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="72" />
-    <option name="y" value="44" />
+    <option name="x" value="-54" />
+    <option name="y" value="1" />
     <option name="width" value="1346" />
     <option name="height" value="699" />
   </component>
@@ -158,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +203,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,16 +249,20 @@
       <workItem from="1539607853019" duration="9738000" />
       <workItem from="1539652563428" duration="1678000" />
       <workItem from="1539654432109" duration="15725000" />
+      <workItem from="1539713887535" duration="884000" />
+      <workItem from="1539738581197" duration="804000" />
+      <workItem from="1539747669449" duration="4237000" />
+      <workItem from="1539758299486" duration="5030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55866000" />
+    <option name="totallyTimeSpent" value="66821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.41137856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,7 +275,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.2979066" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.2689211" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -363,20 +359,6 @@
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai-child/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -405,10 +387,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cuongphattai-child/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        <state relative-caret-position="306">
+          <caret line="207" column="24" lean-forward="true" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
         </state>
       </provider>
     </entry>

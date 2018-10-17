@@ -132,6 +132,7 @@ p{
 	/*background giỏ hàng*/
 	.shopping-cart{
 		background-color: white;
+		float: right;
 
 	}
 	/*color giỏ hàng*/
@@ -162,12 +163,58 @@ p{
 		margin-bottom: 0px!important;
 		height: 0px!important;
 	}
+	/*-------------*/
+	.main-navigation ul>li a {
+		padding-left: 10px !important;
 
+	}
 
-	/*#page #topbar #topbar-widgets{*/
-		/*padding-top: 0px;*/
-		/*padding-bottom: 0px;*/
-	/*}*/
+	/*----------------CONTENT---------*/
+	/*panel-layout sale và video*/
+	.panel-last-child .panel-layout {
+		margin-top: -100px !important;
+		z-index: 1;
+	}
+
+	/*margin video*/
+	.panel-layout .panel-no-style .panel-grid-cell{
+		margin: 10px 10px 0 0;
+	}
+	.container-about-customer{
+		margin-top: -50px;
+	}
+	/*container danh mục sản phẩm*/
+	.container-danhmucsp{
+		margin-top: 150px;
+	}
+	/**/
+	.underline{
+		border-bottom: 3px solid red;
+		max-width: 150px;
+
+		/*!*text-align: center;*!*/
+		margin: -20px auto;
+		margin-bottom: 20px;
+	}
+	/*----------*/
+	.container-button .link-lien-he{
+		border: 2px solid #d30112;
+		/*border-radius: 30px;*/
+		background: #fff;
+		color: #d30112;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 15px;
+		padding:40px;
+		display: inline-block;
+	}
+	.container-lienhe{
+
+		text-align: center;
+		/*margin: 0 auto;*/
+	}
+
 
 
 img {
