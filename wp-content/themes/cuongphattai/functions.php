@@ -6,7 +6,7 @@
  * @license GPL 2.0
  */
 
-define( 'SITEORIGIN_THEME_VERSION', '1.3.14' );
+define( 'SITEORIGIN_THEME_VERSION', '1.5.1' );
 define( 'SITEORIGIN_THEME_JS_PREFIX', '.min' );
 define( 'SITEORIGIN_THEME_CSS_PREFIX', '.min' );
 
@@ -60,7 +60,6 @@ function siteorigin_north_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
@@ -221,6 +220,18 @@ function siteorigin_north_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+	if ( function_exists( 'is_woocommerce' ) ) {
+		register_sidebar( array(
+			'name' 			=> esc_html__( 'Shop Sidebar', 'siteorigin-north' ),
+			'id' 			=> 'sidebar-shop',
+			'description' 	=> esc_html__( 'Displays on WooCommerce pages.', 'siteorigin-north' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' 	=> '</aside>',
+			'before_title' 	=> '<h2 class="widget-title">',
+			'after_title' 	=> '</h3>',
+		) );
+	}	
+
 }
 endif;
 add_action( 'widgets_init', 'siteorigin_north_widgets_init' );
@@ -250,9 +261,11 @@ function siteorigin_north_scripts() {
 	// Skip link focus fix.
 	wp_enqueue_script( 'siteorigin-north-skip-link', get_template_directory_uri() . '/js/skip-link-focus-fix' . SITEORIGIN_THEME_JS_PREFIX . '.js', array(), SITEORIGIN_THEME_VERSION, true );
 
-	// Localize smooth scroll.
+	// Localize smooth scroll and output sticky logo scale.
+	$logo_sticky_scale = apply_filters( 'siteorigin_north_logo_sticky_scale', 0.755 );
 	wp_localize_script( 'siteorigin-north-script', 'siteoriginNorth', array(
-		'smoothScroll' => siteorigin_setting( 'navigation_smooth_scroll' )
+		'smoothScroll' => siteorigin_setting( 'navigation_smooth_scroll' ),
+		'logoScale' => is_numeric( $logo_sticky_scale ) ? $logo_sticky_scale : 0.755,
 	) );
 
 	// jQuery FitVids.
@@ -383,6 +396,8 @@ require get_template_directory() . '/inc/settings.php';
 require get_template_directory() . '/inc/siteorigin-panels.php';
 
 /**
- * Load support for WooCommerce
+ * Load support for WooCommerce.
  */
-include get_template_directory() . '/woocommerce/functions.php';
+if ( function_exists( 'is_woocommerce' ) ) {
+	require get_template_directory() . '/woocommerce/functions.php';
+}

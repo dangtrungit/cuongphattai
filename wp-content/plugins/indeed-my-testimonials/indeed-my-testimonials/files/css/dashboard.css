@@ -1,0 +1,78 @@
+#indeed.postbox .inside{
+    padding: 0 0px 12px !important;
+	margin: 0px !important;
+	background: #fff;
+}
+.indeed-widget-dashboard-wrapp{
+	line-height: 1.4em;
+    font-size: 13px;
+	color: #444;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item{
+	padding: 1em 12px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.06);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.06);
+    background-color: #fef7f1;
+	background: #fff;
+    position: relative;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-avatar{
+	position: absolute;
+  top: 13px;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text{
+  padding-left: 63px;
+  overflow: hidden;
+  word-wrap: break-word;
+line-height: 1.4em;
+  font-size: 13px;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text .comment-meta{
+  line-height: 1.5em;
+  margin-top: 0;
+  color: #666;
+font-size: 13px;
+  font-weight: 400;
+  margin: 0 0 8px 12px;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text .comment-meta .comment-author{
+  font-style: normal;
+  font-weight: 400;
+  color: #0074a2;
+  -webkit-transition-property: border,background,color;
+  transition-property: border,background,color;
+  -webkit-transition-duration: .05s;
+  transition-duration: .05s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text .comment-meta .comment-date{
+	font-size:12px;
+	font-weight:bold;
+	color:#777;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text blockquote{
+	margin-left:0px;
+	margin-top:0px;
+	color:#666;
+}
+.indeed-widget-dashboard-wrapp .indeed-widget-dashboard-item .imtst-dashboard-testimonial-text blockquote p{
+	margin-top:3px;
+}
+.imtst-approve{
+	display: block;
+  	right: 25px;
+	color: #d73503;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: "Open Sans",sans-serif;
+}
+.imtst-approve:before{
+  	content: '\f227';
+  	font: 20px/.5 dashicons;
+  	margin-left: 2px;
+  	vertical-align: middle;
+  	position: relative;
+  	top: -1px;
+  	margin-right: 2px;
+}

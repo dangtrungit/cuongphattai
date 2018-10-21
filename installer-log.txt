@@ -1,0 +1,202 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.40
+* STEP-1 START @ 01:57:55
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.1.1 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1
+DOC ROOT:	C:/xampp/htdocs/democuongphat
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/democuongphat/installer-backup.php
+SAFE MODE :	0
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20181017_de09a16b3510a3e85935181017143605_archive.zip
+SIZE:	159.76MB
+ZIP:	Enabled (ZipArchive Support)
+
+** PACKAGE EXTRACTION IS IN MANUAL MODE ** 
+
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.181018015755.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 01:57:55 - RUNTIME: 0.0336 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 01:59:54
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.21 -- Build Server: 10.1.21
+FILE SIZE:	database.sql (477.31KB) - installer-data.sql (477.31KB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/democuongphat/installer-data.sql]
+COLLATE RESET:	On
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	0
+QUERIES RAN:	354
+
+poka_commentmeta: (0)
+poka_comments: (0)
+poka_duplicator_packages: (1)
+poka_formcraft_3_files: (0)
+poka_formcraft_3_forms: (0)
+poka_formcraft_3_progress: (0)
+poka_formcraft_3_submissions: (0)
+poka_formcraft_3_views: (0)
+poka_itsec_distributed_storage: (0)
+poka_itsec_lockouts: (0)
+poka_itsec_logs: (4)
+poka_itsec_temp: (8)
+poka_links: (0)
+poka_options: (406)
+poka_postmeta: (312)
+poka_posts: (80)
+poka_term_relationships: (18)
+poka_term_taxonomy: (19)
+poka_termmeta: (9)
+poka_terms: (19)
+poka_usermeta: (47)
+poka_users: (1)
+poka_wc_download_log: (0)
+poka_wc_webhooks: (0)
+poka_woocommerce_api_keys: (0)
+poka_woocommerce_attribute_taxonomies: (0)
+poka_woocommerce_downloadable_product_permissions: (0)
+poka_woocommerce_log: (0)
+poka_woocommerce_order_itemmeta: (0)
+poka_woocommerce_order_items: (0)
+poka_woocommerce_payment_tokenmeta: (0)
+poka_woocommerce_payment_tokens: (0)
+poka_woocommerce_sessions: (1)
+poka_woocommerce_shipping_zone_locations: (0)
+poka_woocommerce_shipping_zone_methods: (0)
+poka_woocommerce_shipping_zones: (0)
+poka_woocommerce_tax_rate_locations: (0)
+poka_woocommerce_tax_rates: (0)
+poka_yoast_seo_links: (6)
+poka_yoast_seo_meta: (14)
+
+Removed '50' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 2.1192 sec.
+STEP-2 COMPLETE @ 01:59:56 - RUNTIME: 2.1471 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 02:00:35
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+poka_commentmeta^ (0)
+poka_comments^ (0)
+poka_duplicator_packages^ (0)
+poka_formcraft_3_files^ (0)
+poka_formcraft_3_forms^ (0)
+poka_formcraft_3_progress^ (0)
+poka_formcraft_3_submissions^ (0)
+poka_formcraft_3_views^ (0)
+poka_itsec_distributed_storage^ (0)
+poka_itsec_lockouts^ (0)
+poka_itsec_logs~ (4)
+poka_itsec_temp~ (8)
+poka_links^ (0)
+poka_options~ (354)
+poka_postmeta~ (312)
+poka_posts~ (80)
+poka_term_relationships~ (18)
+poka_term_taxonomy~ (19)
+poka_termmeta~ (9)
+poka_terms~ (19)
+poka_usermeta~ (47)
+poka_users~ (1)
+poka_wc_download_log^ (0)
+poka_wc_webhooks^ (0)
+poka_woocommerce_api_keys^ (0)
+poka_woocommerce_attribute_taxonomies^ (0)
+poka_woocommerce_downloadable_product_permissions^ (0)
+poka_woocommerce_log^ (0)
+poka_woocommerce_order_itemmeta^ (0)
+poka_woocommerce_order_items^ (0)
+poka_woocommerce_payment_tokenmeta^ (0)
+poka_woocommerce_payment_tokens^ (0)
+poka_woocommerce_sessions~ (1)
+poka_woocommerce_shipping_zone_locations^ (0)
+poka_woocommerce_shipping_zone_methods^ (0)
+poka_woocommerce_shipping_zones^ (0)
+poka_woocommerce_tax_rate_locations^ (0)
+poka_woocommerce_tax_rates^ (0)
+poka_yoast_seo_links~ (6)
+poka_yoast_seo_meta~ (14)
+--------------------------------------
+Search1:	'C:/xampp/htdocs/democuongphattai' 
+Change1:	'C:/xampp/htdocs/democuongphat' 
+Search2:	'C:\/xampp\/htdocs\/democuongphattai' 
+Change2:	'C:\/xampp\/htdocs\/democuongphat' 
+Search3:	'C%3A%2Fxampp%2Fhtdocs%2Fdemocuongphattai%2F' 
+Change3:	'C%3A%2Fxampp%2Fhtdocs%2Fdemocuongphat%2F' 
+Search4:	'C:\xampp\htdocs\democuongphattai' 
+Change4:	'C:/xampp/htdocs/democuongphat' 
+Search5:	'//localhost:8888/democuongphattai' 
+Change5:	'//localhost:8888/democuongphat' 
+Search6:	'\/\/localhost:8888\/democuongphattai' 
+Change6:	'\/\/localhost:8888\/democuongphat' 
+Search7:	'%2F%2Flocalhost%3A8888%2Fdemocuongphattai' 
+Change7:	'%2F%2Flocalhost%3A8888%2Fdemocuongphat' 
+SCANNED:	Tables:40 	|	 Rows:892 	|	 Cells:5170 
+UPDATED:	Tables:2 	|	 Rows:100 	|	 Cells:108 
+ERRORS:		0 
+RUNTIME:	0.655700 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 02:00:36 - RUNTIME: 0.7072 sec.
+
+

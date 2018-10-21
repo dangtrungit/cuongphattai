@@ -1,0 +1,151 @@
+.theme_5 .ictst_wrapp ul li{
+display:inline-block;
+vertical-align: top;
+}
+.theme_5 .show{
+	display:inline !important;
+}
+.theme_5 .hide{
+	display:none !important;
+}
+.theme_5 .testi-wrapper{
+padding-right: 7px;
+padding-left: 5px;
+padding-bottom:7px;		
+}
+.theme_5 .clear{
+	clear:both;
+}
+@font-face {
+  font-family: 'FontAwesome-imt';
+  src: url("../../files/fonts/fontawesome-webfont.eot?v=3.2.1");
+  src: url("../../files/fonts/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../../files/fonts/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../../files/fonts/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../../files/fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+display: inline-block;
+font-family: FontAwesome-imt;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.theme_5 .testi-wrapper .quotes{
+color: #3e3e3e!important;
+font: 14px/20px 'PTSansItalic', arial, helvetica, sans-serif;
+font-family: ralewaymedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-style:italic;
+text-align:left;
+line-height:20px;
+margin-bottom: 10px;
+padding-left:15px;
+-moz-transition: padding-top .3s ease-in;
+-o-transition: padding-top  .3s ease-in;
+-webkit-transition: padding-top  .3s ease-in;
+transition: padding-top  .3s ease-in;
+}
+.theme_5 .testi-wrapper .quotes .quote-content{
+padding: 0;
+margin-top: 3%;
+}
+.theme_5 .testi-wrapper .quotes .quote-content a{
+color: inherit;
+text-decoration:none;	
+}
+.theme_5 .testi-wrapper:hover .quotes{
+padding-top:10px;
+}
+.theme_5 .testi-wrapper .clinet-img{
+min-width: 30px;
+width:25%;
+max-width: 200px;
+margin:0 auto;
+float:left;
+}
+.theme_5 .testi-wrapper  img{
+width:100%;
+border-radius: 100%;
+transition-duration: 0.4s;		
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+}
+.theme_5 .testi-wrapper:hover img{
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+filter: gray;
+-webkit-filter: grayscale(50%) brightness(100%) contrast(110%);
+}
+.theme_5 .testi-wrapper .testi-details{
+padding: 13px 0 0 0px;
+position:relative;
+min-width:100px;
+float:left;
+width:75%;
+vertical-align:middle;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text {
+padding-bottom:4px;
+padding-left:15px;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .row{
+padding-left:0px;
+padding-bottom:0px;
+margin:0 auto;
+text-align:left;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-name{
+padding: 0;
+font: 16px/15px 'PTSansBold', arial, helvetica, sans-serif;
+line-height:25px;
+font-style: normal !important;
+color: rgb(0, 175, 209) !important;
+vertical-align: middle;
+font-family: Open Sans Condensed;
+font-weight: 400;
+font-style: normal;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-job{
+text-transform:uppercase;
+color:  #888888;
+font: 12px/20px 'PTSansItalic', arial, helvetica, sans-serif;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-job a{
+color:  #333;
+text-decoration:none;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-job a:hover{
+color: #333;
+text-decoration:underline;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-company{
+color:  #888888;
+text-transform:uppercase;
+font: 12px/20px 'PTSansItalic', arial, helvetica, sans-serif;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-company a{
+color:  #888888;
+text-decoration:none;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .testi-company a:hover{
+color: #333;
+text-decoration:underline;
+}
+.theme_5 .testi-wrapper .testi-details .stars .wrapperStars_fe{
+display:inline-block;
+vertical-align:middle;
+margin-left:-5px;
+padding-right:5px;
+}
+.theme_5 .testi-wrapper .testi-details .stars{
+margin-left:10px;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .date{
+color:#999;
+font-size:11px;
+}
+.theme_5 .testi-wrapper .testi-details .testi-text .date span{
+padding-right:8px;
+}

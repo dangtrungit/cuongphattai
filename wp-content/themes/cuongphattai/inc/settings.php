@@ -1,10 +1,9 @@
 <?php
 
-if ( ! function_exists( 'siteorigin_north_settings_init' ) ) :
 /**
  * Initialize the settings
  */
-function siteorigin_north_settings_init(){
+function siteorigin_north_settings_init() {
 
 	SiteOrigin_Settings::single()->configure( apply_filters( 'siteorigin_north_settings_array', array(
 
@@ -51,11 +50,9 @@ function siteorigin_north_settings_init(){
 				),
 			)
 		),
-		'fonts'       => array(
-			'title'  => __( 'Fonts', 'siteorigin-north' ),
+		'fonts' => array(
+			'title' => __( 'Fonts', 'siteorigin-north' ),
 			'fields' => array(
-
-				// The font families used
 
 				'main'        => array(
 					'type'        => 'font',
@@ -81,7 +78,6 @@ function siteorigin_north_settings_init(){
 					'description' => __( 'Font used for menu items.', 'siteorigin-north' ),
 					'live'        => true,
 				),
-				// The colors
 
 				'text_dark'   => array(
 					'type'        => 'color',
@@ -440,8 +436,7 @@ function siteorigin_north_settings_init(){
 		),
 	) ) );
 }
-endif;
-add_action('siteorigin_settings_init', 'siteorigin_north_settings_init');
+add_action( 'siteorigin_settings_init', 'siteorigin_north_settings_init' );
 
 function siteorigin_north_woocommerce_settings( $settings ) {
 	if ( ! function_exists( 'is_woocommerce' ) ) return $settings;
@@ -460,22 +455,38 @@ function siteorigin_north_woocommerce_settings( $settings ) {
 					'step' => 1
 				),
 
+				'equalize_rows' => array(
+					'type' => 'checkbox',
+					'label' => esc_html__( 'Equalize Product Rows', 'siteorigin-north' ),
+					'description' => esc_html__( 'Equalize product row height on shop archive pages.', 'siteorigin-north' ),
+				),				
+
 				'display_cart' => array(
-					'type'        => 'checkbox',
-					'label'       => esc_html__( 'Display Cart', 'siteorigin-north' ),
+					'type' => 'checkbox',
+					'label' => esc_html__( 'Display Cart', 'siteorigin-north' ),
 					'description' => esc_html__( 'Display WooCommerce cart in the main menu.', 'siteorigin-north' ),
 				),
 
 				'display_checkout_cart' => array(
-					'type'        => 'checkbox',
-					'label'       => esc_html__( 'Display Cart in Checkout', 'siteorigin-north' ),
+					'type' => 'checkbox',
+					'label' => esc_html__( 'Display Cart in Checkout', 'siteorigin-north' ),
 					'description' => esc_html__( 'Display WooCommerce cart in the main menu on cart and checkout page.', 'siteorigin-north' ),
 				),
 
 				'display_quick_view' => array(
-					'type'        => 'checkbox',
-					'label'       => esc_html__( 'Display Quick View button', 'siteorigin-north' ),
-				)
+					'type' => 'checkbox',
+					'label' => esc_html__( 'Display Quick View button', 'siteorigin-north' ),
+				),
+
+				'sidebar_position' => array(
+					'type' => 'select',
+					'label' => esc_html__( 'Shop Sidebar Position', 'siteorigin-north' ),
+					'options' => array(
+						'left' => esc_html__( 'Left', 'siteorigin-north' ),
+						'right' => esc_html__( 'Right', 'siteorigin-north' ),
+						'none' => esc_html__( 'None', 'siteorigin-north' ),
+					),
+				),				
 
 			)
 		)
@@ -485,9 +496,8 @@ function siteorigin_north_woocommerce_settings( $settings ) {
 }
 add_filter( 'siteorigin_north_settings_array', 'siteorigin_north_woocommerce_settings' );
 
-if ( ! function_exists( 'siteorigin_north_font_settings' ) ) :
 /**
- * Tell the settings framework which settings we're using as fonts
+ * Tell the settings framework which settings we're using as fonts.
  *
  * @param $settings
  *
@@ -495,27 +505,27 @@ if ( ! function_exists( 'siteorigin_north_font_settings' ) ) :
  */
 function siteorigin_north_font_settings( $settings ) {
 
-	$settings['fonts_main']     = array(
-		'name'    => 'Droid Sans',
+	$settings['fonts_main'] = array(
+		'name' => 'Droid Sans',
 		'weights' => array(
 			400,
 			700
 		),
 	);
 	$settings['fonts_headings'] = array(
-		'name'    => 'Montserrat',
+		'name' => 'Montserrat',
 		'weights' => array(
 			400
 		),
 	);
-	$settings['fonts_details']  = array(
-		'name'    => 'Droid Serif',
+	$settings['fonts_details'] = array(
+		'name' => 'Droid Serif',
 		'weights' => array(
 			400
 		),
 	);
-	$settings['fonts_menu']  = array(
-		'name'    => 'Droid Sans',
+	$settings['fonts_menu'] = array(
+		'name' => 'Droid Sans',
 		'weights' => array(
 			400,
 			700
@@ -524,10 +534,8 @@ function siteorigin_north_font_settings( $settings ) {
 
 	return $settings;
 }
-endif;
 add_filter( 'siteorigin_settings_font_settings', 'siteorigin_north_font_settings' );
 
-if ( ! function_exists( 'siteorigin_north_settings_custom_css' ) ) :
 /**
  * Add custom CSS for the theme settings
  *
@@ -536,9 +544,8 @@ if ( ! function_exists( 'siteorigin_north_settings_custom_css' ) ) :
  * @return string
  */
 function siteorigin_north_settings_custom_css( $css ) {
-// Custom CSS Code
-$css .= '/* style */
-	/**** /private/var/folders/_s/htpl50fd5d70c9hb2nnvjnjh0000gn/T/wXDs5x/sass/style.css ***/
+	// Custom CSS.
+	$css .= '/* style */
 	body,button,input,select,textarea {
 	color: ${fonts_text_medium};
 	.font( ${fonts_main} );
@@ -612,17 +619,14 @@ $css .= '/* style */
 	.main-navigation .menu > li.current-menu-item > a,.main-navigation .menu > li.current-menu-ancestor > a {
 	color: ${fonts_text_menu_current};
 	}
+	.main-navigation .icon-menu span {
+	background: ${responsive_mobile_icon_color};
+	}
 	.main-navigation #mobile-menu-button {
 	color: ${responsive_mobile_text_color};
 	}
-	.main-navigation #mobile-menu-button .svg-icon-menu path {
-	fill: ${responsive_mobile_icon_color};
-	}
 	.main-navigation #mobile-menu-button:hover {
 	color: ${fonts_text_menu_hover};
-	}
-	.main-navigation #mobile-menu-button:hover .svg-icon-menu path {
-	fill: ${fonts_text_menu_hover};
 	}
 	.main-navigation .north-search-icon .svg-icon-search path {
 	fill: ${fonts_text_menu};
@@ -635,6 +639,12 @@ $css .= '/* style */
 	}
 	#header-search input[type="search"] {
 	.font( ${fonts_details} );
+	}
+	#header-search #close-search .svg-icon-close path {
+	fill: ${fonts_text_menu};
+	}
+	#header-search #close-search .svg-icon-close:hover path {
+	fill: ${fonts_text_menu_hover};
 	}
 	.main-navigation.stripped a {
 	color: ${fonts_text_menu};
@@ -690,6 +700,15 @@ $css .= '/* style */
 	margin: 0 ${structure_sidebar_width} 0 0;
 	}
 	.site-content .widget-area {
+	width: ${structure_sidebar_width};
+	}
+	.layout-sidebar-left:not(.woocommerce):not(.woocommerce-page) .content-area,.layout-wc-sidebar-left .content-area {
+	margin: 0 0 0 -${structure_sidebar_width};
+	}
+	.layout-sidebar-left:not(.woocommerce):not(.woocommerce-page) .site-main,.layout-wc-sidebar-left .site-main {
+	margin: 0 0 0 ${structure_sidebar_width};
+	}
+	.layout-sidebar-left:not(.woocommerce):not(.woocommerce-page) .site-content .widget-area,.layout-wc-sidebar-left .site-content .widget-area {
 	width: ${structure_sidebar_width};
 	}
 	#masthead {
@@ -844,10 +863,8 @@ $css .= '/* style */
 	}';
 	return $css;
 }
-endif;
 add_filter( 'siteorigin_settings_custom_css', 'siteorigin_north_settings_custom_css' );
 
-if ( ! function_exists( 'siteorigin_north_wc_settings_custom_css' ) ) :
 /**
  * Add custom CSS for the theme woocommerce elements
  *
@@ -858,7 +875,7 @@ if ( ! function_exists( 'siteorigin_north_wc_settings_custom_css' ) ) :
 function siteorigin_north_wc_settings_custom_css( $css ) {
 	if ( ! function_exists( 'is_woocommerce' ) ) return $css;
 
-	// Custom WooCommerce CSS Code
+	// Custom WooCommerce CSS.
 	$css .= '/* woocommerce */
 	.woocommerce .woocommerce-ordering .ordering-selector-wrapper {
 	color: ${fonts_text_light};
@@ -866,16 +883,13 @@ function siteorigin_north_wc_settings_custom_css( $css ) {
 	.woocommerce .woocommerce-ordering .ordering-selector-wrapper .north-icon-next {
 	color: ${fonts_text_light};
 	}
-	.woocommerce .woocommerce-ordering .ordering-selector-wrapper:hover {
-	color: ${fonts_text_dark};
-	}
-	.woocommerce .woocommerce-ordering .ordering-selector-wrapper:hover .north-icon-next {
-	color: ${fonts_text_dark};
-	}
 	.woocommerce .woocommerce-ordering .ordering-selector-wrapper .ordering-dropdown li {
 	color: ${fonts_text_light};
 	}
 	.woocommerce .woocommerce-ordering .ordering-selector-wrapper .ordering-dropdown li:hover {
+	color: ${fonts_text_dark};
+	}
+	.woocommerce .woocommerce-ordering .ordering-selector-wrapper.open-dropdown .north-icon-next {
 	color: ${fonts_text_dark};
 	}
 	.woocommerce .woocommerce-result-count {
@@ -969,24 +983,27 @@ function siteorigin_north_wc_settings_custom_css( $css ) {
 	.main-navigation .shopping-cart .shopping-cart-count {
 	background: ${branding_accent} padding-box;
 	}
-	.widget_shopping_cart_content .cart_list .mini_cart_item .mini_cart_details .mini_cart_product {
+	.widget_shopping_cart .widget_shopping_cart_content .cart_list .mini_cart_item .mini_cart_details .mini_cart_product {
 	color: ${fonts_text_dark};
 	}
-	.widget_shopping_cart_content .cart_list .mini_cart_item .mini_cart_details .mini_cart_cost {
+	.widget_shopping_cart .widget_shopping_cart_content .cart_list .mini_cart_item .mini_cart_details .mini_cart_cost {
 	color: ${branding_accent};
 	}
-	.widget_shopping_cart_content .buttons a {
+	.widget_shopping_cart .widget_shopping_cart_content .cart_list .mini_cart_item .remove:hover {
+	color: ${branding_accent_dark} !important;
+	}
+	.widget_shopping_cart .widget_shopping_cart_content .buttons a {
 	.font( ${fonts_headings} );
 	}
-	.widget_shopping_cart_content .buttons a.mini_cart_view {
+	.widget_shopping_cart .widget_shopping_cart_content .buttons a.mini_cart_view {
 	border: 1px solid ${fonts_text_dark};
 	color: ${fonts_text_dark};
 	}
-	.widget_shopping_cart_content .buttons a.mini_cart_checkout {
+	.widget_shopping_cart .widget_shopping_cart_content .buttons a.mini_cart_checkout {
 	background: ${branding_accent};
 	border: 1px solid ${branding_accent};
 	}
-	.widget_shopping_cart_content .buttons a:hover {
+	.widget_shopping_cart .widget_shopping_cart_content .buttons a:hover {
 	background: ${branding_accent_dark};
 	border-color: ${branding_accent_dark};
 	}
@@ -1026,17 +1043,17 @@ function siteorigin_north_wc_settings_custom_css( $css ) {
 	background: ${branding_accent_dark};
 	border-color: ${branding_accent_dark};
 	}
-	.woocommerce .widget-area .widget_price_filter .ui-slider {
+	.widget_price_filter .ui-slider {
 	background-color: ${branding_accent};
 	}
-	.woocommerce .widget-area .widget_price_filter .ui-slider .ui-slider-range,.woocommerce .widget-area .widget_price_filter .ui-slider .ui-slider-handle {
+	.widget_price_filter .ui-slider .ui-slider-range,.widget_price_filter .ui-slider .ui-slider-handle {
 	background-color: ${branding_accent_dark};
 	}
-	.woocommerce .widget-area .widget_price_filter .price_slider_amount .button {
+	.widget_price_filter .price_slider_amount .button {
 	border: 1px solid ${fonts_text_dark};
 	color: ${fonts_text_dark};
 	}
-	.woocommerce .widget-area .widget_price_filter .price_slider_amount .button:hover {
+	.widget_price_filter .price_slider_amount .button:hover {
 	background: ${branding_accent_dark};
 	border-color: ${branding_accent_dark};
 	}
@@ -1055,21 +1072,21 @@ function siteorigin_north_wc_settings_custom_css( $css ) {
 	.woocommerce #quick-view-container .product-content-wrapper .product-info-wrapper .price {
 	color: ${branding_accent};
 	.font( ${fonts_details} );
+	}
+	#topbar .demo_store {
+	background: ${branding_accent};
+	color: ${fonts_text_meta};
+	.font( ${fonts_details} );
 	}';
-
 	return $css;
 }
-endif;
 add_filter( 'siteorigin_settings_custom_css', 'siteorigin_north_wc_settings_custom_css' );
 
-if ( ! function_exists( 'siteorigin_north_menu_breakpoint_css' ) ) :
 /**
  * Add CSS for mobile menu breakpoint
  */
 function siteorigin_north_menu_breakpoint_css( $css, $settings ) {
-	$breakpoint = isset( $settings['theme_settings_responsive_menu_breakpoint'] ) ? $settings['theme_settings_responsive_menu_breakpoint'] : 600;
-
-	$css .= '@media screen and (max-width: ' . intval( $breakpoint ) . 'px) {
+	$css .= '@media screen and (max-width: ' . intval( siteorigin_setting( 'responsive_menu_breakpoint' ) ) . 'px) {
 		body.responsive .main-navigation #mobile-menu-button {
 			display: inline-block;
 		}
@@ -1089,22 +1106,20 @@ function siteorigin_north_menu_breakpoint_css( $css, $settings ) {
 			display: inline-block;
 		}
 	}
-	@media screen and (min-width: ' . ( 1 + $breakpoint ) . 'px) {
+	@media screen and (min-width: ' . ( 1 + intval( siteorigin_setting( 'responsive_menu_breakpoint' ) ) ) . 'px) {
 		body.responsive #mobile-navigation {
 			display: none !important;
 		}
 	}';
 	return $css;
 }
-endif;
 add_filter( 'siteorigin_settings_custom_css', 'siteorigin_north_menu_breakpoint_css', 10, 2 );
 
-if ( ! function_exists( 'siteorigin_north_sidebar_zero_css' ) ) :
 /**
  * Add CSS when sidebar width is 0.
  */
 function siteorigin_north_sidebar_zero_css( $css, $settings ) {
-	if ( !isset( $settings[ 'theme_settings_structure_sidebar_width' ] ) ) {
+	if ( ! isset( $settings[ 'theme_settings_structure_sidebar_width' ] ) ) {
 		return $css;
 	}
 
@@ -1121,10 +1136,8 @@ function siteorigin_north_sidebar_zero_css( $css, $settings ) {
 	return $css;
 
 }
-endif;
 add_filter( 'siteorigin_settings_custom_css', 'siteorigin_north_sidebar_zero_css', 10, 2 );
 
-if ( ! function_exists( 'siteorigin_north_settings_defaults' ) ) :
 /**
  * Add default settings.
  *
@@ -1132,8 +1145,8 @@ if ( ! function_exists( 'siteorigin_north_settings_defaults' ) ) :
  *
  * @return mixed
  */
-function siteorigin_north_settings_defaults( $defaults ){
-	// Branding defaults
+function siteorigin_north_settings_defaults( $defaults ) {
+	// Branding defaults.
 	$defaults['branding_logo']             = false;
 	$defaults['branding_logo_retina']      = false;
 	$defaults['branding_site_title']       = false;
@@ -1142,28 +1155,28 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['branding_accent']           = '#c75d5d';
 	$defaults['branding_accent_dark']      = '#a94346';
 
-	// Font defaults
+	// Font defaults.
 	$defaults['fonts_text_dark']       	 = '#292929';
 	$defaults['fonts_text_medium']     	 = '#595959';
 	$defaults['fonts_text_light']      	 = '#898989';
 	$defaults['fonts_text_meta']       	 = '#b0b0b0';
 
-	// The new menu font colors
+	// The new menu font colors.
 	$defaults['fonts_text_menu']         = '#898989';
 	$defaults['fonts_text_menu_hover']   = '#595959';
 	$defaults['fonts_text_menu_current'] = '#292929';
 
-	// Icon defaults
+	// Icon defaults.
 	$defaults['icons_menu']          = false;
 	$defaults['icons_search']        = false;
 	$defaults['icons_close_search']  = false;
 	$defaults['icons_scroll_to_top'] = false;
 
-	// Double % because values are passed through get_theme_mod so must be escaped for sprintf
+	// Double % because values are passed through get_theme_mod so must be escaped for sprintf.
 	$defaults['structure_sidebar_width']    = '35%%';
 	$defaults['structure_sidebar_position'] = 'right';
 
-	// The masthead defaults
+	// The masthead defaults.
 	$defaults['masthead_layout']               = 'default';
 	$defaults['masthead_text_above']           = '';
 	$defaults['masthead_background_color']     = '#fafafa';
@@ -1174,7 +1187,7 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['masthead_top_padding']          = '10px';
 	$defaults['masthead_bottom_margin']        = '30px';
 
-	// Navigation settings
+	// Navigation settings.
 	$defaults['navigation_search']               = true;
 	$defaults['navigation_sticky']               = true;
 	$defaults['navigation_sticky_scale']         = true;
@@ -1183,7 +1196,7 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['navigation_scroll_to_top_mobile'] = false;
 	$defaults['navigation_smooth_scroll']        = true;
 
-	// Responsive settings
+	// Responsive settings.
 	$defaults['responsive_disabled']                       = false;
 	$defaults['responsive_fitvids']                        = true;
 	$defaults['responsive_menu_breakpoint']                = '600';
@@ -1194,7 +1207,7 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['responsive_mobile_text_color']              = '#666';
 	$defaults['responsive_mobile_icon_color']              = '#777';
 
-	// Blog settings
+	// Blog settings.
 	$defaults['blog_featured_archive']      = true;
 	$defaults['blog_post_content']          = 'content';
 	$defaults['blog_read_more_text']        = __( 'Continue reading', 'siteorigin-north' );
@@ -1207,8 +1220,8 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['blog_display_comment_count'] = true;
 	$defaults['blog_ajax_comments']         = true;
 
-	// Footer defaults
-	$defaults['footer_text']             	= __( 'Copyright © {year} {sitename}', 'siteorigin-north' );
+	// Footer defaults.
+	$defaults['footer_text']             	= __( 'Copyright &copy; {year} {sitename}', 'siteorigin-north' );
 	$defaults['footer_widget_title_color']	= '#292929';
 	$defaults['footer_text_color']       	= '#595959';
 	$defaults['footer_link_color']       	= '#c75d5d';
@@ -1221,16 +1234,17 @@ function siteorigin_north_settings_defaults( $defaults ){
 	$defaults['footer_side_padding']     	= '40px';
 	$defaults['footer_top_margin']       	= '30px';
 
-	// WooCommerce defaults
-	$defaults['woocommerce_archive_columns']       = 3;
-	$defaults['woocommerce_display_cart']          = true;
-	$defaults['woocommerce_display_checkout_cart'] = false;
-	$defaults['woocommerce_display_quick_view']    = false;
+	// WooCommerce defaults.
+	$defaults['woocommerce_archive_columns']		= 3;
+	$defaults['woocommerce_equalize_rows']			= false;
+	$defaults['woocommerce_display_cart']			= true;
+	$defaults['woocommerce_display_checkout_cart']	= false;
+	$defaults['woocommerce_display_quick_view']		= false;
+	$defaults['woocommerce_sidebar_position']		= 'right';
 
 	return $defaults;
 }
-endif;
-add_filter('siteorigin_settings_defaults', 'siteorigin_north_settings_defaults');
+add_filter( 'siteorigin_settings_defaults', 'siteorigin_north_settings_defaults' );
 
 function siteorigin_north__migrated_settings( $migrated ) {
 	$migrated = array(
@@ -1242,7 +1256,6 @@ function siteorigin_north__migrated_settings( $migrated ) {
 }
 add_filter( 'siteorigin_settings_migrated_settings', 'siteorigin_north__migrated_settings' );
 
-if ( ! function_exists( 'siteorigin_north_page_settings' ) ) :
 /**
  * Setup Page Settings for SiteOrigin North
  */
@@ -1276,8 +1289,8 @@ function siteorigin_north_page_settings( $settings, $type, $id ){
 		'description'    => __( 'Display the page title on this page.', 'siteorigin-north' )
 	);
 
-	if( $type == 'post' ) $post = get_post( $id );
-	if( ! empty( $post ) && $post->post_type == 'page' ) {
+	if ( $type == 'post' ) $post = get_post( $id );
+	if ( ! empty( $post ) && $post->post_type == 'page' ) {
 		$settings['featured_image'] = array(
 			'type'           => 'checkbox',
 			'label'          => __( 'Page Featured Image', 'siteorigin-north' ),
@@ -1316,14 +1329,12 @@ function siteorigin_north_page_settings( $settings, $type, $id ){
 
 	return $settings;
 }
-endif;
 add_action( 'siteorigin_page_settings', 'siteorigin_north_page_settings', 10, 3 );
 
-if ( ! function_exists( 'siteorigin_north_setup_page_setting_defaults' ) ) :
 /**
- * Add the default Page Settings
+ * Add the default Page Settings.
  */
-function siteorigin_north_setup_page_setting_defaults( $defaults, $type, $id ){
+function siteorigin_north_setup_page_setting_defaults( $defaults, $type, $id ) {
 	// All the basic default settings
 	$defaults['layout']              = 'default';
 	$defaults['menu']                = 'default';
@@ -1333,23 +1344,21 @@ function siteorigin_north_setup_page_setting_defaults( $defaults, $type, $id ){
 	$defaults['hide_masthead']       = false;
 	$defaults['hide_footer_widgets'] = false;
 
-	// Defaults for page only settings
+	// Defaults for page only settings.
 	if( $type == 'post' ) $post = get_post( $id );
 	if( ! empty( $post ) && $post->post_type == 'page' ) {
 		$defaults['featured_image'] = false;
 	}
 
-	// Specific default settings for different types
+	// Specific default settings for different types.
 	if( $type == 'template' && $id == 'home' ) {
 		$defaults['page_title'] = false;
 	}
 
 	return $defaults;
 }
-endif;
 add_filter( 'siteorigin_page_settings_defaults', 'siteorigin_north_setup_page_setting_defaults', 10, 3 );
 
-if ( ! function_exists( 'siteorigin_north_page_settings_panels_defaults' ) ) :
 /**
  * Change the default page settings for the home page.
  *
@@ -1357,16 +1366,14 @@ if ( ! function_exists( 'siteorigin_north_page_settings_panels_defaults' ) ) :
  *
  * @return mixed
  */
-function siteorigin_north_page_settings_panels_defaults( $settings ){
-	$settings['layout']     = 'no-sidebar';
+function siteorigin_north_page_settings_panels_defaults( $settings ) {
+	$settings['layout'] = 'no-sidebar';
 	$settings['page_title'] = false;
 
 	return $settings;
 }
-endif;
-add_filter('siteorigin_page_settings_panels_home_defaults', 'siteorigin_north_page_settings_panels_defaults');
+add_filter( 'siteorigin_page_settings_panels_home_defaults', 'siteorigin_north_page_settings_panels_defaults' );
 
-if( !function_exists('siteorigin_north_siteorigin_setting_update_image') ) :
 /**
  * Convert URL based images into IDs
  *
@@ -1383,14 +1390,12 @@ function siteorigin_north_siteorigin_setting_update_image( $mods ) {
 
 	return $mods;
 }
-endif;
 add_filter( 'option_theme_mods_siteorigin-north', 'siteorigin_north_siteorigin_setting_update_image' );
 
-if( !function_exists( 'siteorigin_north_about_page' ) ) :
 /**
  * Adds everything we need for the North about page.
  */
-function siteorigin_north_about_page( $about ){
+function siteorigin_north_about_page( $about ) {
 	$about['title_image'] = get_template_directory_uri() . '/admin/about/north-logo-small.png';
 	$about['title_image_2x'] = get_template_directory_uri() . '/admin/about/north-logo-large.png';
 
@@ -1415,5 +1420,4 @@ function siteorigin_north_about_page( $about ){
 
 	return $about;
 }
-endif;
 add_filter( 'siteorigin_about_page', 'siteorigin_north_about_page' );

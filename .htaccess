@@ -1,4 +1,18 @@
-# This file was updated by Duplicator on 2018-10-12 16:16:27. See .htaccess.orig for the original .htaccess file.
+# BEGIN iThemes Security - Do not modify or remove this line
+# iThemes Security Config Details: 2
+	# Disable XML-RPC - Security > Settings > WordPress Tweaks > XML-RPC
+	<files xmlrpc.php>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+# END iThemes Security - Do not modify or remove this line
+
+# This file was updated by Duplicator on 2018-10-18 02:00:36. See .htaccess.orig for the original .htaccess file.
 # Please note that other plugins and resources write to this file. If the time-stamp above is different
 # than the current time-stamp on the file system then another resource has updated this file.
 # Duplicator only writes to this file once during the install process while running the installer.php file.
@@ -6,10 +20,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /democuongphattai/
+RewriteBase /democuongphat/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /democuongphattai/index.php [L]
+RewriteRule . /democuongphat/index.php [L]
 </IfModule>
+
 # END WordPress

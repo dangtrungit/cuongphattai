@@ -29,8 +29,7 @@ function add_js_file(){
 	wp_register_script('wow-js', VUTIENIT_JS_URL . '/wow.min.js', array('jquery'), '', true);
 	wp_enqueue_script('wow-js');
 
-	wp_register_script('slick-js', VUTIENIT_JS_URL . '/slick.min.js', array('jquery'), '', true);
-	wp_enqueue_script('slick-js');
+
 
 	wp_register_script('poka-js', VUTIENIT_JS_URL . '/poka.js', array('jquery'), '', true);
 	wp_enqueue_script('poka-js');
@@ -64,3 +63,8 @@ register_sidebar(array(
 
 add_filter("mce_buttons_2", "ilc_mce_buttons");
 load_child_theme_textdomain('siteorigin-north', get_stylesheet_directory() . '/languages/');
+
+
+if(!is_admin()){
+    PMCommon::load_assets_css_js('sticky/', 'jquery.sticky.min.js', 'js');
+}

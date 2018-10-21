@@ -24,24 +24,33 @@
 
 	<?php if ( siteorigin_setting( 'masthead_text_above' ) && ! is_active_sidebar( 'topbar-sidebar' ) ) : ?>
 		<div id="topbar">
+			<?php if ( class_exists( 'Woocommerce' ) && is_store_notice_showing() ) {
+				siteorigin_north_wc_demo_store();
+			} ?>
 			<div class="container">
 				<p><?php echo wp_kses_post( siteorigin_setting( 'masthead_text_above' ) ) ?></p>
 			</div>
 		</div><!-- #topbar -->
 	<?php elseif ( is_active_sidebar( 'topbar-sidebar' ) ) : ?>
 		<div id="topbar">
+			<?php if ( class_exists( 'Woocommerce' ) && is_store_notice_showing() ) {
+				siteorigin_north_wc_demo_store();
+			} ?>
 			<div id="topbar-widgets" class="container">
 				<?php $siteorigin_north_masthead_sidebar = wp_get_sidebars_widgets(); ?>
-				<div class="widgets widgets-<?php echo count( $siteorigin_north_masthead_sidebar['topbar-sidebar'] ) ?>" role="complementary" aria-label="<?php esc_html_e( 'Top Bar Sidebar', 'siteorigin-north' ); ?>">
+				<div class="widgets widgets-<?php echo count( $siteorigin_north_masthead_sidebar['topbar-sidebar'] ) ?>" aria-label="<?php esc_attr_e( 'Top Bar Sidebar', 'siteorigin-north' ); ?>">
 					<?php dynamic_sidebar( 'topbar-sidebar' ); ?>
 				</div>
 			</div><!-- #topbar-widgets -->
 		</div><!-- #topbar -->
+	<?php elseif ( class_exists( 'Woocommerce' ) && is_store_notice_showing() ) : ?>
+		<div id="topbar">
+			<?php siteorigin_north_wc_demo_store(); ?>
+		</div><!-- #topbar -->
 	<?php endif; ?>
 
 	<?php if ( ! siteorigin_page_setting( 'hide_masthead', false ) ) : ?>
-		<header id="masthead" class="site-header layout-<?php echo sanitize_html_class( str_replace('_', '-', siteorigin_setting( 'masthead_layout' ) ) ) ?> <?php if( siteorigin_setting( 'navigation_sticky' ) ) echo 'sticky-menu'; ?>" role="banner"
-			<?php if ( siteorigin_setting( 'navigation_sticky_scale' ) ) echo 'data-scale-logo="true"' ?> >
+		<header id="masthead" class="site-header layout-<?php echo sanitize_html_class( str_replace('_', '-', siteorigin_setting( 'masthead_layout' ) ) ) ?> <?php if( siteorigin_setting( 'navigation_sticky' ) ) echo 'sticky-menu'; ?>" <?php if ( siteorigin_setting( 'navigation_sticky_scale' ) ) echo 'data-scale-logo="true"' ?> >
 			<div class="container">
 
 				<div class="container-inner">
@@ -53,13 +62,20 @@
 						<?php endif ?>
 					</div><!-- .site-branding -->
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+					<nav id="site-navigation" class="main-navigation">
 
 						<?php if ( siteorigin_page_setting( 'layout' ) !== 'stripped' ) : ?>
 
+							<?php if ( function_exists( 'ubermenu' ) ) : ?>
 
+								<?php
+								ubermenu(
+									'main',
+									array( 'theme_location' => 'primary' )
+								);
+								?>
 
-							<?php if ( function_exists( 'max_mega_menu_is_enabled' ) && max_mega_menu_is_enabled( 'primary' ) ) : ?>
+							<?php elseif ( function_exists( 'max_mega_menu_is_enabled' ) && max_mega_menu_is_enabled( 'primary' ) ) : ?>
 
 								<?php
 								wp_nav_menu( array(
@@ -67,7 +83,7 @@
 								) );
 								?>
 
-							<?php else: ?>
+							<?php else : ?>
 
 								<a href="#menu" id="mobile-menu-button">
 									<?php siteorigin_north_display_icon( 'menu' ) ?>
@@ -86,12 +102,12 @@
 
 							<?php endif; ?>
 
-							<?php if ( class_exists( 'Woocommerce' ) ) : ?>
+							<?php if ( class_exists( 'Woocommerce' ) && ! ( function_exists( 'ubermenu' ) || function_exists( 'max_mega_menu_is_enabled' ) ) ) : ?>
 								<?php if ( ( ! ( is_cart() || is_checkout() ) && siteorigin_setting( 'woocommerce_display_cart' ) ) || ( ( is_cart() || is_checkout() ) && siteorigin_setting( 'woocommerce_display_checkout_cart' ) ) ) : ?>
 									<?php global $woocommerce; ?>
 									<ul class="shopping-cart">
 										<li>
-											<a class="shopping-cart-link" href="<?php echo $woocommerce->cart->get_cart_url();?>">
+											<a class="shopping-cart-link" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
 												<span class="screen-reader-text"><?php esc_html_e( 'View shopping cart', 'siteorigin-north' ); ?></span>
 												<span class="north-icon-cart"></span>
 												<span class="shopping-cart-text"><?php esc_html_e( ' View Cart ', 'siteorigin-north' ); ?></span>
@@ -105,11 +121,11 @@
 								<?php endif; ?>
 							<?php endif; ?>
 
-							<?php if ( siteorigin_setting( 'navigation_search' ) ) : ?>
-								<a class="north-search-icon">
+							<?php if ( siteorigin_setting( 'navigation_search' ) && ! ( function_exists( 'ubermenu' ) || function_exists( 'max_mega_menu_is_enabled' ) ) ) : ?>
+								<button class="north-search-icon">
 									<label class="screen-reader-text"><?php esc_html_e( 'Open search bar', 'siteorigin-north' ); ?></label>
 									<?php siteorigin_north_display_icon( 'search' ); ?>
-								</a>
+								</button>
 							<?php endif; ?>
 
 						<?php endif; ?>

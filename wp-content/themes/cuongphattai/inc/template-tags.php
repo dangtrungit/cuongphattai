@@ -87,7 +87,7 @@ function siteorigin_north_the_post_navigation() {
 		return;
 	}
 	?>
-	<nav class="navigation post-navigation" role="navigation">
+	<nav class="navigation post-navigation">
 		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'siteorigin-north' ); ?></h2>
 		<div class="nav-links">
 			<?php
@@ -305,8 +305,8 @@ function siteorigin_north_comment( $comment, $args, $depth ) {
 		<?php endif; ?>
 
 		<div class="comment-container">
-			<?php if($depth <= $args['max_depth']) : ?>
-				<?php comment_reply_link(array('depth' => $depth, 'max_depth' => $args['max_depth'])) ?>
+			<?php if( $depth <= $args['max_depth'] ) : ?>
+				<?php comment_reply_link( array('depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ?>
 			<?php endif; ?>
 
 			<div class="info">
@@ -322,6 +322,11 @@ function siteorigin_north_comment( $comment, $args, $depth ) {
 			</div>
 
 			<div class="comment-content content">
+				<?php if ( ! $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation">
+						<?php esc_html_e( 'Your comment is awaiting moderation.', 'siteorigin-north' ); ?>
+					</p>
+				<?php endif; ?>
 				<?php comment_text(); ?>
 			</div>
 		</div>
@@ -394,11 +399,11 @@ function siteorigin_north_display_icon( $type ) {
 			if ( siteorigin_setting( 'icons_menu' ) ): ?>
 				<?php siteorigin_north_custom_icon( 'icons_menu', 'svg-icon-menu' ); ?>
 			<?php else : ?>
-				<svg version="1.1" class="svg-icon-menu" <?php echo ( siteorigin_setting( 'responsive_menu_text' ) ? 'aria-hidden="true"' : '' ); ?> xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-					<path class="line-1" d="M3,5h18c0.3,0,0.5,0.1,0.7,0.3C21.9,5.5,22,5.7,22,6s-0.1,0.5-0.3,0.7C21.5,6.9,21.3,7,21,7H3 C2.7,7,2.5,6.9,2.3,6.7C2.1,6.5,2,6.3,2,6s0.1-0.5,0.3-0.7C2.5,5.1,2.7,5,3,5z"/>
-					<path class="line-2" d="M3,11h18c0.3,0,0.5,0.1,0.7,0.3S22,11.7,22,12s-0.1,0.5-0.3,0.7S21.3,13,21,13H3c-0.3,0-0.5-0.1-0.7-0.3 C2.1,12.5,2,12.3,2,12s0.1-0.5,0.3-0.7C2.5,11.1,2.7,11,3,11z"/>
-					<path class="line-3" d="M3,17h18c0.3,0,0.5,0.1,0.7,0.3S22,17.7,22,18s-0.1,0.5-0.3,0.7S21.3,19,21,19H3c-0.3,0-0.5-0.1-0.7-0.3 C2.1,18.5,2,18.3,2,18s0.1-0.5,0.3-0.7C2.5,17.1,2.7,17,3,17z"/>
-				</svg>
+				<div class="icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			<?php endif;
 			break;
 
@@ -559,6 +564,9 @@ function siteorigin_north_get_image() {
 	$first_image = '';
 
 	$output = preg_match_all( '/<img[^>]+\>/i', get_the_content(), $images );
+
+	if ( empty( $images[0] ) ) return false;
+
 	$first_image = $images[0][0];
 
 	return ( '' !== $first_image ) ? $first_image : false;
