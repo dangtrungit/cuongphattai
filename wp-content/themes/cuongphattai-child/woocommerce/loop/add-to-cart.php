@@ -28,6 +28,6 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		esc_attr( $product->get_id() ),
 		esc_attr( $product->get_sku() ),
 		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-		esc_html( $product->add_to_cart_text() )
+		esc_html( 'MUA NGAY' )
 	),
 $product );

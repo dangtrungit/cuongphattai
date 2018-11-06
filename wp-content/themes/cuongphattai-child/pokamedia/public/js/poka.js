@@ -35,5 +35,96 @@ jQuery(document).ready(function(){
         ]
         // arrows: false,
     });
+    jQuery('.slider-danhmuc-child').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // infinite: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        // arrows: false,
+    });
+    // jQuery('.flex-control-thumbs').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     // infinite: true,
+    //     autoplay: false,
+    //     autoplaySpeed: 2000,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //                 dots: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 780,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //     ]
+    //     // arrows: false,
+    // });
+
+    jQuery(".product-categories .cat-parent").click(function(){
+        jQuery(this).addClass("active");
+        jQuery(".product-categories .cat-parent.active .children").toggle();
+        jQuery(this).removeClass("active");
+        });
+
+    // jQuery(".container-total-mota").hide();
+
+    // jQuery(".button-showmore-mota").click(function(){
+
+        // jQuery(this).addClass("remove");
+        // // jQuery(".container-total-mota").toggle();
+        // jQuery(".container-total-mota").show();
+        //
+        // });
+
+    jQuery(".term-description").appendTo(jQuery(".pk-banner-category"));
+    jQuery("h1.page-title").appendTo(jQuery(".term-description"));
 
 })

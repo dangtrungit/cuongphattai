@@ -153,9 +153,14 @@
 	<?php endif; ?>
 
 	<?php do_action( 'siteorigin_north_content_before' ); ?>
+    <?php
+        if (is_product_category()){
 
+        }
+
+    ?>
 	<div id="content" class="site-content">
-
+        <div class="pk-banner-category"></div>
 		<div class="container">
 
 			<?php do_action( 'siteorigin_north_content_top' ); ?>

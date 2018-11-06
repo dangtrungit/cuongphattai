@@ -1,4 +1,6 @@
+
 <?php
+
 /**
  * Related Products
  *
@@ -16,12 +18,20 @@
  * @version     3.0.0
  */
 
+
+
+echo '';
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 if ( $related_products ) : ?>
-
+<!--Hiển thị dưới mô tả chi tiết sản phẩm-->
+    <div class="product-short-description pk-post-product-detail-row">
+        <?php if ( is_active_sidebar( 'pk-post-product-detail' ) ) : ?>
+            <?php dynamic_sidebar( 'pk-post-product-detail' ); ?>
+        <?php endif; ?>
+    </div>
 	<section class="related products">
 
 		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>

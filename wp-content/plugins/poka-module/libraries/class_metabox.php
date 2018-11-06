@@ -7,7 +7,7 @@ class POKA_MetaBox {
 				'post_page' => false,       //Meta boxes POST, Page
 				'category'  => false,       //Meta boxes Category
 				'user'      => false,       //Meta boxes User Profile
-				'product'   => false        //Meta boxes Product Woocommerce
+				'product'   => true        //Meta boxes Product Woocommerce
 			);
 			
 			foreach($arr as $key => $value){

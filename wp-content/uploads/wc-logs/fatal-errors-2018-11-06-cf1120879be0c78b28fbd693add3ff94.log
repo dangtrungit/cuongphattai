@@ -1,0 +1,24 @@
+2018-11-06T08:24:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-06T08:26:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-06T14:18:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+

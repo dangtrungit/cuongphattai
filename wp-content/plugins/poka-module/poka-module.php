@@ -13,6 +13,7 @@ require_once 'define.php';
 add_action('plugins_loaded', array('POKA_Plugin', 'init'));
 class POKA_Plugin{
 	public static function init(){
+        ob_start();
 		self::importCoreClass();
 		
 		if(is_admin()){

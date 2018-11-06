@@ -22,7 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
+<!-- cong poka hien tren topbar -->
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
 	<span class="price"><?php echo $price_html; ?></span>
+    <?php  echo '<a class="guide-link-product" href="get_permalink($product->ID)/#huongdanmuahang">HƯỚNG DẪN SỬ DỤNG</a>'  ?>
 <?php endif; ?>

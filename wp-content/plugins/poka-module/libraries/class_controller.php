@@ -148,11 +148,13 @@
 //					wp_enqueue_script('pokamodule-admin', _POKA_PLUGIN_URL_ . "js/admin.js", '', '', true);
 //					wp_enqueue_style('pokamodule-admin', _POKA_PLUGIN_URL_ . 'css/admin_global.min.css', '', '', 'all');
 				}else{
-					wp_enqueue_script('pokamodule-frontend', _POKA_PLUGIN_URL_ . "assets/slick/slick.min.js", '', '', true);
-					wp_enqueue_style('pokamodule-frontend', _POKA_PLUGIN_URL_ . 'assets/slick/slick.min.css', '', '', 'all');
-                    wp_enqueue_style('pokamodule-frontend', _POKA_PLUGIN_URL_ . 'assets/slick/fonts/slick.ttf', '', '', 'all');
-                    wp_enqueue_style('pokamodule-frontend', _POKA_PLUGIN_URL_ . 'assets/slick/fonts/slick.woff', '', '', 'all');
+					wp_enqueue_script('pokamodule-frontend-js', _POKA_PLUGIN_URL_ . "assets/slick/slick.min.js", '', '', true);
+					wp_enqueue_script('pokamodule-frontend-semantic', _POKA_PLUGIN_URL_ . "assets/semantic-ui/semantic.js", '', '', true);
+					wp_enqueue_style('pokamodule-frontend-slick-css', _POKA_PLUGIN_URL_ . 'assets/slick/slick.min.css', '', '', 'all');
+                    wp_enqueue_style('pokamodule-frontend-slick-ttf', _POKA_PLUGIN_URL_ . 'assets/slick/fonts/slick.ttf', '', '', 'all');
+                    wp_enqueue_style('pokamodule-frontend-slick-woff', _POKA_PLUGIN_URL_ . 'assets/slick/fonts/slick.woff', '', '', 'all');
 					wp_enqueue_style('pokamodule-frontend-11', _POKA_PLUGIN_URL_ . 'assets/slick/slick-theme.css', '', '', 'all');
+					wp_enqueue_style('pokamodule-frontend-semantic-css', _POKA_PLUGIN_URL_ . 'assets/semantic-ui/semantic.css', '', '', 'all');
 //					wp_enqueue_style('pokamodule-frontend', _POKA_PLUGIN_URL_ . 'assets/sticky/jquery.sticky.min.js', '', '', 'all');
 
 				}

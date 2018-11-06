@@ -28,15 +28,43 @@ class POKA_MetaBox_Product {
 		
 		$postType = get_post_type($postID);
 		$data     = $_POST;
-		
+
 		if($postType == 'product'){
 			/*======Save======*/
+//            echo("<pre>");
+//            print_r($_POST);
+//            die('111111111111');
+            $video =  trim($_POST['video']);
+
+            if (!empty($video)) {
+
+                update_post_meta($postID, "video", $video);
+
+            }else{
+
+                delete_post_meta($postID, 'video');
+
+            }
+            $luuy =  trim($_POST['luuy']);
+
+            if (!empty($luuy)) {
+
+                update_post_meta($postID, "luuy", $luuy);
+
+            }else{
+
+                delete_post_meta($postID, 'luuy');
+
+            }
+
+
 		}
 	}
 	
 	/*Hien Thi HTML*/
-	public function content(){
+	public function content($obj){
 		wp_nonce_field($this->_meta_box_id,$this->_meta_box_id . '-nonce');
 		require_once _POKA_PLUGIN_LIB_PATH_ . "/metabox/product/tpl/display.php";
+
 	}
 }

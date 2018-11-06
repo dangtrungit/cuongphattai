@@ -27,6 +27,9 @@
 				case "order-product": //Dat Hang Nhanh
 					$this->orderProduct($aAtts);
 					break;
+                case "list-category":
+                    $this->showcategory($aAtts);
+                    break;
 				case "nothing":
 				default:
 					echo "NOTHING";
@@ -83,13 +86,20 @@
 		}
 		
 		//[pokamodule com="pokamodule-shortcode" task="order-product"]
-		private function orderProduct($aAtts = array()){
-			$productID = $_GET['order-product'];
-			if($productID > 0){
-				PMCommon::load_lib_css_js('pokamodule-shortcode/css/', 'order-product.min.css', 'css', 'components');
-				require_once $this->sPath . '/tpl/product/order-product.php';
-			}
-		}
+        private function orderProduct($aAtts = array()){
+            $productID = $_GET['order-product'];
+            if($productID > 0){
+                PMCommon::load_lib_css_js('pokamodule-shortcode/css/', 'order-product.min.css', 'css', 'components');
+                require_once $this->sPath . '/tpl/product/order-product.php';
+            }
+        }
+
+//        [pokamodule com="pokamodule-shortcode" task="list-category"]
+        private function showcategory($aAtts = array()){
+
+            require_once $this->sPath . '/tpl/post/list-cate.php';
+
+        }
 		
 		
 		/*====================== DO ACTION ======================*/

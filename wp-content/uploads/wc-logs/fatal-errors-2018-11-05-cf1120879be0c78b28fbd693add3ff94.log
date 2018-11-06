@@ -1,0 +1,174 @@
+2018-11-05T08:09:17+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-11-05T08:09:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-11-05T08:09:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-11-05T14:39:02+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:27
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T14:41:26+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:27
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T14:41:41+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:27
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T14:45:41+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\includes\functions.php:41
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php(40): Common::displayTotal()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#4 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\xampp\htdocs\democuongphat\w
+
+2018-11-05T14:46:23+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\includes\functions.php:41
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php(40): Common::displayTotal()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#4 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\xampp\htdocs\democuongphat\w
+
+2018-11-05T15:14:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-05T15:19:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-05T15:24:02+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\complete.php:9
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(91): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\class-wp
+
+2018-11-05T16:14:22+00:00 CRITICAL Uncaught Error: Call to undefined method PokamoduleCheckoutController::wp_create_user() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:8
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\dem
+
+2018-11-05T16:33:38+00:00 CRITICAL Uncaught Error: Call to undefined method PokamoduleCheckoutController::wp_create_user() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:8
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\dem
+
+2018-11-05T16:34:11+00:00 CRITICAL Uncaught Error: Call to undefined method PokamoduleCheckoutController::wp_create_user() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:8
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\dem
+
+2018-11-05T16:44:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-05T16:48:02+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-05T16:55:05+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:34
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T16:59:02+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:34
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T16:59:35+00:00 CRITICAL Uncaught Error: Call to undefined function getResultLanguage() in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\tpl\checkout_page.php:34
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(104): include()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(67): PokamoduleCheckoutController->checkoutPage(Array)
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(50): PokamoduleCheckoutController->doShortCode(Array)
+#3 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(319): POKA_Controller::doShortCode(Array, '', 'pokamodule')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\democuongphat\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(pokamo...', 'do_shortcode_ta...', '[pokamodule com...')
+#6 C:\xampp\htdocs\democuongphat\wp-includes\c
+
+2018-11-05T17:00:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-11-05T17:02:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Checkout::create_order(), 0 passed in C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php on line 119 and exactly 1 expected in C:\xampp\htdocs\democuongphat\wp-content\plugins\woocommerce\includes\class-wc-checkout.php:283
+Stack trace:
+#0 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(119): WC_Checkout->create_order()
+#1 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\components\pokamodule-checkout\pokamodule-checkout.php(53): PokamoduleCheckoutController->createOrder()
+#2 C:\xampp\htdocs\democuongphat\wp-content\plugins\poka-module\libraries\class_controller.php(24): PokamoduleCheckoutController->doAction()
+#3 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(286): POKA_Controller::doAction('')
+#4 C:\xampp\htdocs\democuongphat\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+

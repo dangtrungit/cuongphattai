@@ -424,7 +424,7 @@
 						}
 						
 						if($view_more){
-							$html .= '<div class="view-more"><a href="' . get_permalink() . '">Xem Thêm</a></div>';
+							$html .= '<div class="view-more"><a href="' . get_permalink() . '">ĐỌC THÊM</a></div>';
 						}
 						
 						$html .= '</li>';
