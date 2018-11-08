@@ -104,7 +104,7 @@ class PokamoduleCheckoutController {
         include ( $this->sPath . "/tpl/checkout_page.php" );
     }
 
-    private function createOrder(){   
+    private function createOrder(){
         parse_str($_REQUEST["fdata"], $aData);
 
         $name           = $aData["name"];
@@ -114,7 +114,7 @@ class PokamoduleCheckoutController {
         $province       = !empty($aData["province"]) ? $aData["province"] : "";
         $address        = !empty($aData["address"]) ? $aData["address"] : "";
         $order_excerpt  = !empty($aData["order_excerpt"]) ? $aData["order_excerpt"] : "";
-
+        
         $checkout = WC()->checkout();
         $order_id = $checkout->create_order();
         $order    = wc_get_order( $order_id );

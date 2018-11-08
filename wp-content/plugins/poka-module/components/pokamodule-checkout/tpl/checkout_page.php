@@ -89,8 +89,8 @@
       
         <div class="area_address">
             <div class="field field_province">
-                 <select  name="province"  id="province" class="ui dropdown search " >
-                        <option value=""><?php echo 'Chọn Tỉnh/Thành phố';?></option>
+                 <select  name="province"  id="province2" class="" >
+                        <option value="">Chọn Tỉnh/Thành phố</option>
                         <option value="AN-GIANG">An Giang</option>
                         <option value="BA-RIA-VUNG-TAU">Bà Rịa - Vũng Tàu</option>
                         <option value="BAC-LIEU">Bạc Liêu</option>

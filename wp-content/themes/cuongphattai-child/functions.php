@@ -162,5 +162,5 @@ function addToCart()
 }
 add_action( 'woocommerce_single_product_summary', 'test', 17 );
 function test(){
-    echo "<div class='free-ship' ><p>Vận chuyển</p><img src=' ".get_home_url()."/wp-content/uploads/2018/11/shipfreeoto.png')><span>Free ship nội thành</span></div>";
+    echo "<div class='free-ship' ><p>Vận chuyển</p><img src='".get_home_url()."/wp-content/uploads/2018/11/shipfreeoto.png'><span>Free ship nội thành</span></div>";
 }
