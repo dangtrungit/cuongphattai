@@ -1,8 +1,7 @@
 <?php
 $productID = $obj->ID;
 $video = get_post_meta($productID, 'video', true);
-
-
+$luuy  = get_post_meta($productID, 'luuy', true);
 ?>
 <table class="form-table">
 

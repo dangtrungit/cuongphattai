@@ -164,3 +164,38 @@ add_action( 'woocommerce_single_product_summary', 'test', 17 );
 function test(){
     echo "<div class='free-ship' ><p>Vận chuyển</p><img src='".get_home_url()."/wp-content/uploads/2018/11/shipfreeoto.png'><span>Free ship nội thành</span></div>";
 }
+add_action( 'woocommerce_single_product_summary', 'camket', 60);
+function camket(){
+   echo "<div class='camket' >
+            <div class='camket-child'><div class='left'><img src='".get_home_url()."/wp-content/uploads/2018/11/lich.png'></div><span>7 ngày đổi hàng miễn phí</span></div>
+            <div class='camket-child'><div class='left'><img src='".get_home_url()."/wp-content/uploads/2018/11/tick-1.png'></div><span>Hàng chính hãng 100%</span></div>
+            <div class='camket-child'><div class='left'><img src='".get_home_url()."/wp-content/uploads/2018/11/phuongtien.png'></div><span>Miễn phí vận chuyển</span></div>
+         </div>";
+}
+add_action( 'woocommerce_after_single_product_summary', 'hdsudung', 12);
+
+function hdsudung(){
+    global $post;
+//    echo '<pre>';
+//    print_r($post);
+//    echo '</pre>';
+     $productID = $post->ID;
+
+    $video = get_post_meta($productID, 'video', true);
+    $luuy  = get_post_meta($productID, 'luuy', true);
+
+    echo  $video;
+    echo $luuy;
+
+}
+/*-----hien thi sp duoi nd----------*/
+register_sidebar(array(
+    'name' => 'Bottom content single',
+    'id' => 'bottom-content-single',
+    'description' => 'Hiển thị bên dưới nội dung bài viết',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h1 class="widget-title">',
+    'after_title' => '</h1>'
+));
+

@@ -161,6 +161,7 @@
     ?>
 	<div id="content" class="site-content">
         <div class="pk-banner-category"></div>
-		<div class="container">
+        <?php rdfa_breadcrumb(); ?>
+        <div class="container">
 
 			<?php do_action( 'siteorigin_north_content_top' ); ?>
