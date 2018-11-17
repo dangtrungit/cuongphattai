@@ -23,6 +23,13 @@ jQuery(document).ready(function(){
                         slidesToScroll: 2
                     }
                 },
+                // {
+                //     breakpoint: 768,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1
+                //     }
+                // },
                 {
                     breakpoint: 480,
                     settings: {
@@ -153,8 +160,8 @@ jQuery(document).ready(function(){
     //     ]
     //     // arrows: false,
     // });
-
-    jQuery(".product-categories .cat-parent").click(function(){
+    //
+    jQuery(".product-categories .cat-item.cat-parent").click(function(){
         jQuery(this).addClass("active");
         jQuery(".product-categories .cat-parent.active .children").toggle();
         jQuery(this).removeClass("active");

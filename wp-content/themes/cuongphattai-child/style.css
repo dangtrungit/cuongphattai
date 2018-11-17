@@ -8,9 +8,12 @@ Template: cuongphattai
 Text Domain: cuongphattai
 Domain Path: /languages/
 */
-*,p ,a , h1 ,h2 ,h3, h4, h5, h6,input,span,button,b,i,.post-descrition,.woocommerce-loop-product__title,.breadcrumbs{
-	font-family: 'Open Sans', sans-serif;
+*,p ,a ,h1 ,h2 ,h3, h4, h5, h6,input,button,b,.post-descrition,.woocommerce-loop-product__title,.breadcrumbs{
+	font-family: 'Open Sans', sans-serif ;
 	/*color: #000;*/
+}
+.fa{
+	font: normal normal normal 14px/1 FontAwesome!important;
 }
 p:empty{
 	/*display: none;*/
@@ -144,6 +147,7 @@ p{
 	#topbar #topbar-widgets{
 		padding-top: 0px !important;
 		padding-bottom: 0px!important;
+		padding-left: 10px;
 	}
 	/*------------TIN TUC CHI TIET-----------*/
 /*---------chuyên mục tin tức-----------*/
@@ -464,6 +468,11 @@ article.page, article.post {
 /*----MASTHEAD----*/
 #page #masthead{
 
+
+}
+
+#masthead.layout-centered .site-branding img{
+	display: none!important;
 }
 .home.page-template-default .container .breadcrumbs{
 	display: none;
@@ -482,7 +491,7 @@ article.page, article.post {
 	margin-top: -8px;
 }
 .home.page-template-default.page #page .site-header{
-	margin-top: -30px;
+	/*margin-top: -30px;*/
 }
 .archive.tax-product_cat .site-header .container{
 	margin-top: 30px;
@@ -490,6 +499,9 @@ article.page, article.post {
 .archive.category .container{
 	margin-top: -8px;
 }
+	.container .menu-menu-container ul> li:first-child a{
+		padding-left: 0px!important;
+	}
 	.menu-menu-container{
 		vertical-align:text-top;
 		margin-top: 2px;
@@ -559,8 +571,13 @@ article.page, article.post {
 		text-align: left!important;
         margin-bottom: -1px;
 	}
+	.archive.post-type-archive.post-type-archive-product #masthead.layout-centered .main-navigation,.archive.post-type-archive.post-type-archive-product #masthead.layout-centered .site-branding{
+		margin-top: 30px;
+	}
 	#masthead.layout-centered .site-branding {
 		margin: 8px auto !important ;
+		/*margin-bottom: 0px;*/
+		display: none;
 	}
 	.archive.category #page .container .page-header .breadcrumbs {
 		display: block;
@@ -822,7 +839,7 @@ article.page, article.post {
 	font-size: 12pt;
 	position: absolute;
 	bottom: 100px;
-	left: 276px;
+	left: 285px;
 }
 .product-template-default.single div.theme_4 .owl-tst-controls{
 	padding-bottom: 0px!important;
@@ -834,6 +851,21 @@ article.page, article.post {
 	z-index: 1;
 
 }
+.home.page-template-default .container-content-about-us .container-btn-xemcamnhan-home a:hover {
+    background: #9e9e9e;
+    /*color: white;*/
+}
+.home.page-template-default .container-content-about-us .container-btn-xemcamnhan-home a {
+     padding: 10px;
+     background: #d30112;
+     color: white;
+
+ }
+.home.page-template-default .container-content-about-us .container-btn-xemcamnhan-home {
+     background: white;
+     padding-bottom: 40px;
+     text-align: center;
+ }
  container-content-about-us {
 	margin-top:0px !important;
 }
@@ -883,9 +915,9 @@ article.page, article.post {
     /*box-shadow: 0 1px 8px rgba(0,0,0,0.3);*/
 
 }
-#content .container-danhmucsp .layout-below-container-product{
+/*#content .container-danhmucsp .layout-below-container-product{*/
 
-}
+/*}*/
 .container-danhmucsp .panel-layout .product-item  img {
 	height: 110px;
 	border-radius: 5px;
@@ -955,7 +987,7 @@ article.page, article.post {
 	/*-------------DUNG CU AO THUAT---------*/
 #page #content .container .container-dungcu-aothuat .layout-builder-dungcu-aothuat .button-showmore{
 	margin-top: 0px!important;
-	margin-bottom: 50px!important;
+	margin-bottom: 80px!important;
 
 }
 .home.page-template-default .container #main .price{
@@ -1417,7 +1449,7 @@ a.guide-link-product{
 }
 .layout-text-tintuc{
 	text-align: center;
-	margin: 65px 0 -5px 0!important;
+	margin: 66px 0 -5px 0!important;
 	/*margin-top: 0px!important;*/
 }
 .layout-text-tintuc .title-tintuc{
@@ -1502,7 +1534,7 @@ a.guide-link-product{
 }
 /*.theme_4 .testi-wrapper .testi-details .testi-text {*/
 .theme_4 .testi-wrapper .testi-details .testi-text .row span {
-	color: black!important;
+	color: black;
 
 }
 .theme_4 .testi-wrapper .quotes .quote-content a {
@@ -1579,15 +1611,24 @@ a.guide-link-product{
 	/*margin: 15px;*/
 
 }
-.container-social-network-link li{
+.container-social-network-link ul>li{
 	display: inline-block;
-	width: 33px;
-	height: 33px;
+	width: 36px;
+	height:37px;
 	border: 2px solid white;
-	border-radius: 35px;
+	border-radius: 40px;
 	text-align: center;
-	padding: 3px;
+	/*padding: 3px;*/
 	margin: 5px;
+}
+.container-social-network-link ul{
+	margin: 0px;
+}
+.container-social-network-link {
+	padding-top: 30px;
+}
+.container-social-network-link i{
+
 }
 .container-social-network-link a{
 	color: white;
@@ -1612,10 +1653,14 @@ a.guide-link-product{
 	.container-adress{
 		/*margin-left: 6px;*/
 	}
+
 	/*------------hotline----------*/
 	#layout-footer{
 		font-size: 20px;
 	}
+	#layout-footer .container-hotline .hotline-footer a:hover{
+        color: black !important;
+    }
 	#layout-footer .container-hotline{
 		margin-top: 30px;
 		/*margin-left: 100px;*/
@@ -1636,7 +1681,23 @@ a.guide-link-product{
 		font-size: 15px;
 
 	}
+	/*------------------chinhs sach -------------*/
+	.chinhsach p{
+		font-style: italic;
+		padding-top: 8px;
+        line-height: 164%;
+	}
+	.chinhsach span{
+		font-weight: bold;
+		font-size: 15pt;
+	}
+	.chinhsach{
+		color: white;
+	}
 	/*--------layout adresss-------*/
+    #layout-footer .adress-info a:hover{
+        color: black !important;
+    }
 	.adress-info{
 		display: inline-grid;
 		/*color: #db2323 ;*/
@@ -1679,7 +1740,7 @@ a.guide-link-product{
 		/*underline dia chỉ*/
 	.underline-footer{
 		border-bottom: 1px solid white;
-		max-width: 50px;
+		max-width: 70%;
 		/*!*text-align: center;*!*/
 		/*margin: -20px auto;*/
 		/*margin-bottom: 20px;*/
@@ -1702,6 +1763,26 @@ a.guide-link-product{
 		/*margin-right: 0px;*/
 		/*height: 200px;*/
 	}
+    /*--------------Mạng xã hội---------------*/
+.container-social-network-link ul>li:hover{
+    background: black;
+
+}
+    /*---------DANH MUC SAN PHAM SIDEBAR----------*/
+    .widget_product_categories ul li:first-child{
+        padding-top: 8px;
+    }
+    .widget_product_categories ul li{
+         padding: 0px;
+    }
+    .onsale{
+        background-color: rgb(211, 1, 18) !important;
+    }
+    /*--------Chính sách-----------------*/
+#colophon .container-content-footer .chinhsach .chinhsach-footer a:hover{
+        color: black!important;
+    }
+
 	/*-----------DANH MUC BAI BIP----------*/
 /*-------slider anh quang cao-----------*/
 .home.page-template-default .product-item{
@@ -1775,9 +1856,12 @@ a.guide-link-product{
 	display: flex;
 	background-color: #0068ff;
 }
+.text-zalo-link a {
+    padding-left: 13px;
+}
 .text-youtube-link,.text-facebook-link,.text-zalo-link {
 	/*background: #d30112;*/
-	margin-left: 2px;
+	margin-left: 0px;
 	padding: 0 10px;
 	border-left: 2px solid white;
 	display: flex;
@@ -1791,6 +1875,7 @@ p {
 
 .container-link-root a p{
 	font-size: 13px!important;
+    padding:11px;
 }
 .container-link-root a{
 	color: white;
@@ -1798,6 +1883,9 @@ p {
 	display: inline-flex;
 	align-items: center;
 
+}
+.container-link-root .fa-facebook-f:before,.container-link-root .fa-facebook:before,.container-link-root .fa-youtube:before{
+    font-size: 23pt;
 }
 .container-link-root a:hover{
 	color: white!important;
@@ -1811,13 +1899,18 @@ p {
 .container-youtube{
 	background-color:#d30112;
 }
+.container-zalo:hover{
+    background-color: #a8a7ab;
+}
+.container-youtube:hover ,.container-facebook:hover,.container-zalo  p:hover{
+    background-color: #a8a7ab;
+}
 .container-youtube ,.container-facebook,.container-zalo  p{
 	margin-bottom: 10px;
 	display: flex;
 	color: white;
 	font-size: 14px!important;
 	/*margin: 0px;*/
-
 	/*padding: 0 10px;*/
 }
 .container-facebook{
@@ -1833,7 +1926,7 @@ p {
 
 .container-link-root .youtube-link{
 	background-color:  #d30112;
-	padding: 5px;
+	padding: 7px;
 	width: 40px;
 	display: flex;
 	justify-content: center;
@@ -1943,6 +2036,9 @@ p {
 }
 .product-categories .cat-parent .children .cat-item a{
 	border: none!important;
+}
+.product-categories .cat-parent a:hover{
+    color: #d30112!important;
 }
 .product-categories .cat-parent a{
 	color: black!important;
@@ -2326,21 +2422,22 @@ body.responsive .container {
 	background-color:#f1f1f1 ;
 	color: black;
 	text-align: center;
-	margin-top: 40px!important;
+	/*margin-top: 40px!important;*/
 	position: relative;
 }
 .title-camnhan{
 	padding: 10px;
 
 	text-align: center;
-	font-size: 16px;
+	font-size: 20pt;
 	color: black;
-	border: 1px dotted black;
+	/*border: 1px dotted black;*/
 	margin-bottom: 40px;
 }
 .title-camnhan span{
 	color: #d30112;
 	font-weight: bold;
+	font-size: 28pt;
 }
 .mota-camnhan{
 	padding: 10px;
@@ -2372,6 +2469,60 @@ body.responsive .container {
 
 
 /*----------CHI TIET BAI VIET--------------------*/
+.post-template-default.single .bottom-content-single h1{
+	font-size: 12pt;
+}
+.post-template-default.single .bottom-content-single h1:after{
+	border: 0.5px solid #d30112;
+	width: 100%;
+	content: "";
+	display: block;
+}
+.layout-chatluong-thuonghieu .title-trihoanthanhcong{
+	text-align: center;
+}
+.layout-chatluong-thuonghieu{
+	background: #48525a99;
+	height: 555px
+}
+.title-trihoanthanhcong p:last-child:after{
+	font-size: 18px;
+	border: solid 0.5px;
+	/* max-width: 100%; */
+	content: "";
+	display: block;
+	margin: 10px 250px;
+}
+.title-trihoanthanhcong p{
+	color: white!important;
+	padding-top: 50px;
+	font-size: 25pt;
+	font-style: normal;
+}
+.content-camket-chitiet p:last-child{
+	margin-top: 40px;
+
+}
+.content-camket-chitiet p{
+	line-height: 140%;
+	font-style: italic;
+	font-size: 15pt;
+}
+.content-camket-chitiet{
+	margin: 70px;
+	color: black;
+	background: #faf7f7b5;
+
+	padding: 30px;
+}
+.total-camket-chitiet{
+	margin-top: 230px;
+	/*height: 555px;*/
+	/*margin-top: 100px;*/
+}
+.post-template-default.single .bottom-content-single h1{
+	color: #d30112!important;
+}
 .post-template-default.single .container .entry-title,.post-template-default.single .container .entry-meta{
 	margin: 0 0 10px;
 }
@@ -2401,8 +2552,64 @@ body.responsive .container {
 }
 /*----------CHI TIET SAN PHAM--------------------*/
 /*------------mo ta---------*/
+.product-template-default.single .container .entry-summary .woocommerce-product-details__short-description p{
+    font-size: 11pt;
+}
+.product-template-default.single .cart .quantity input{
+    font-size: 11pt;
+}
+.layout-container-camket-spchitiet{
+	margin-top: 40px;
+	box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+}
+.layout-row-2 .panel-grid-cell,.layout-row-3 .panel-grid-cell{
+	margin: 20px 0px 0;
+	padding: 10px;
+	background: #d30112;
+}
+.layout-row-2 p, .layout-row-3 p{
+	padding: 20px;
+	text-align: center;
+	background: #d30112;
+	border: 1px dotted;
+	color: white;
+}
+.layout-intro-row-1 .panel-grid-cell{
+	background: #d30112;
+}
+.layout-intro-row-1 .panel-grid-cell:last-child{
+	margin-left: 10px;
+}
+.layout-intro-row-1 .panel-grid-cell:first-child{
+	/*background: #d30112;*/
+	margin-right: 10px;
+}
+.layout-intro{
+	margin-top: 40px;
+}
+.layout-intro-row-1{
+	/*margin-top: 40px;*/
+}
+.intro-row-1  {
+
+}
+.intro-row-1 .text-row-1 p {
+	text-align: center;
+	color: white;
+	padding: 10px;
+	border: 1px dotted;
+	/*margin: 10px;*/
+}
+.intro-row-1 .text-row-1 {
+	background: #d30112;
+	margin: 10px;
+
+}
 .layouy-chatluong-thuonghieu p img{
 	margin-top: 40px!important;
+}
+.woocommerce.single #content div.product .product_title{
+	font-family: 'Open Sans', bold;
 }
  .woocommerce-page div.product .woocommerce-tabs {
 	background-color: #f1f1f1!important;
@@ -2445,7 +2652,7 @@ body.responsive .container {
 	color: black;
 	background: #f1f1f1;
 	padding: 20px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .fa-video-camera:before {
@@ -2464,11 +2671,18 @@ body.responsive .container {
 .container-img-camket img {
 	margin-top: 15px;
 }
+/*--------------Đặt hàng nhanh------------*/
+.listorder .col_img button span{
+    margin: 0px!important;
+}
+.order_info .product_name a{
+    color: #d30112;
+}
 
 /*-------------Đánh giá---------------*/
 .product-template-default.single #page .container .widget-area{
 
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 
 }
 .woocommerce.single #content div.product .woocommerce-product-rating .woocommerce-review-link{
@@ -2493,16 +2707,17 @@ body.responsive .container {
 .woocommerce .woocommerce-message{
 	border-top-color: #8fae1b;
 	color: #8fae1b;
+    background: #f1f1f1!important;
 }
 .woocommerce-message .button{
 	border: 1px solid #8fae1b!important;
 }
 .product-template-default.single .owl-tst-item .testi-details  .quote-content p{
-	font-size: 12px;
+	font-size: 14px;
 }
 .product-template-default.single .owl-tst-item .testi-details  .testi-text .row span{
 	line-height: 140% !important;
-	font-size: 13px;
+	font-size: 14px;
 
 }
 .product-template-default.single .container .product.type-product .wc-tab p{
@@ -2561,8 +2776,8 @@ background-color: #9e9e9e;
 }
 .container .woocommerce-product-gallery .flex-viewport {
 	border: 1px solid;
-	padding: 10px;
-	max-height: 250px
+	/*padding: 10px;*/
+	/*max-height: 250px*/
 ;
 
 }
@@ -2582,8 +2797,9 @@ background-color: #9e9e9e;
 	/*display: block;*/
 	/*margin: 0 auto;*/
 }
-.woocommerce #main ul.products li.product .price del{
+.woocommerce ul.products li.product .price del{
 	font-size: 15px!important;
+	color: black;
 }
 .woocommerce #main ul.products li.product .price{
 	color: #d30112;
@@ -2592,6 +2808,7 @@ background-color: #9e9e9e;
 	margin: 0 auto;
 	margin-top: 0px;
 	margin: 3px 0px;
+    display: grid;
 	/* padding: 10px; */
 }
 .woocommerce div.product div.images .flex-control-thumbs{
@@ -2646,8 +2863,12 @@ background-color: #9e9e9e;
 	padding-top: 34px;
 
 }
+.camket-child:last-child .left{
+    padding-right: 5px;
+    padding-top: 15px;
+}
 .camket-child .left{
-	padding-top: 10px;
+	padding-top: 15px;
 	height: auto;
 	width: 45px;
 	line-height: 140%
@@ -2676,13 +2897,15 @@ background-color: #9e9e9e;
 
  }
  .breadcrumb.breadcrumbs .rdfa-breadcrumb{
-	font-size: 17px;
+	font-size: 16px;
 	padding-bottom: 10px;
 	 font-weight: initial;
 }
-#page #content .breadcrumb {
-	padding-left: 210px;
+.breadcrumb {
+	/*padding-left: 95px;*/
 	padding-bottom: 30px;
+    width: 1160px;
+    margin: 0 auto!important;
 }
 .archive.category .container .content-area .site-main .page-header .breadcrumbs,.container .site-main .breadcrumbs{
 	display: none;
@@ -2725,7 +2948,7 @@ background-color: #9e9e9e;
 }
 #main .product .summary p span{
 	color: #d30112!important;
-	font-weight: bold;
+	font-weight: initial;
 	font-size: 2rem!important;
 }
 #main .product .summary h1{
@@ -2826,7 +3049,7 @@ background-color: #9e9e9e;
 	border-color: #d30112;
 	background: #d30112;
 	width: 20%;
-	display: flex;
+	display: inline-block;
 	justify-content: center;
 }
 .woocommerce button.button.alt{
@@ -2962,7 +3185,76 @@ background-color: #9e9e9e;
 	/*padding: 10px;*/
 	color: black;
 }
+/*------------------THANH TOAN--------------*/
+.page-template-default.woocommerce-checkout .container .order-details .woocommerce-terms-and-conditions-wrapper{
+	display: none;
+}
+.page-template-default.woocommerce-checkout .woocommerce button.button.alt:hover{
+	background:#9e9e9e ;
+	color: white;
+}
+.page-template-default.woocommerce-checkout .woocommerce button.button.alt{
 
+	border: 1px solid #d30112;
+	color: #d30112;
+}
+.page-template-default.woocommerce-checkout .woocommerce-additional-fields h3{
+	padding-top: 10px;
+
+
+}
+.page-template-default.woocommerce-checkout .woocommerce-additional-fields{
+	margin-top: 20px;
+	border-top: 1px solid #d30112;
+
+}
+.page-template-default.woocommerce-checkout .product-name{
+
+}
+.page-template-default.woocommerce-checkout .entry-title,.page-template-default.woocommerce-checkout .product-name,.page-template-default.woocommerce-checkout .product-total{
+	color: black;
+}
+.page-template-default.woocommerce-checkout .woocommerce-notice:before{
+	color: #d30112!important;
+
+}
+.page-template-default.woocommerce-checkout .order-details .woocommerce-checkout-payment ul li{
+	border-top-color: #d30112!important;
+}
+.page-template-default.woocommerce-checkout .poka-widget-show-post{
+	display: none;
+}
+/*------------------Giỏ hàng----------------------*/
+.page-template-default.page .woocommerce table.shop_table .cart-buttons input.button:hover{
+    background: #9e9e9e;
+    color: white;
+}
+.woocommerce table.shop_table .cart-buttons input.button {
+    border-radius: 5px;
+    background: #084a4a;
+    color: #fff;
+    /*border-color: #084a4a;*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: normal;
+}
+.page-template-default.page .woocommerce table.shop_table .cart-buttons input.button{
+    border-radius: 0!important;
+    border: none;
+}
+.page-template-default.page .woocommerce table.shop_table .cart-buttons .checkout-button:hover{
+    background: #9e9e9e;
+    color: white;
+}
+.page-template-default.page .woocommerce table.shop_table .cart-buttons .checkout-button{
+    padding: 12px;
+    border: none;
+    border-radius: 0!important;
+}
+
+.woocommerce table.shop_table .cart-item-product-name,.woocommerce table.shop_table .cart_totals th{
+    color: black;
+}
 
 /*-------------------------DANH MỤC CHI TIẾT SẢN PHẨM--------------------*/
 .breadcrumb.breadcrumbs .rdfa-breadcrumb {
@@ -3039,15 +3331,23 @@ background-color: #9e9e9e;
 #page #main .cart-wrapper tbody tr .cart_totals .order-total td {
 	text-align: right;
 }
+.woocommerce table.shop_table .remove{
+    margin: 0px;
+}
+
 .woocommerce table.shop_table .cart-buttons {
 	display: inline-block;
 	width: 100%;
 }
+.woocommerce table.shop_table .cart-buttons .button-continue-shopping:hover {
+    background: #9e9e9e;
+}
 .woocommerce table.shop_table .cart-buttons .button-continue-shopping {
-	background: #333;
+	background: #187d79;
 	color: #fff;
-	border-radius: 5px;
-	padding: 5px 10px;
+    border: none;
+	/*border-radius: 5px;*/
+	/*padding: 5px 10px;*/
 	float: left;
 }
 .woocommerce table.shop_table .cart-buttons .button-continue-shopping:before {
@@ -3055,15 +3355,7 @@ background-color: #9e9e9e;
 	display: inline-block;
 	vertical-align: middle;
 }
-.woocommerce table.shop_table .cart-buttons input.button {
-	border-radius: 5px;
-	background: #0769a9;
-	color: #fff;
-	border-color: #0769a9;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	font-weight: normal;
-}
+
 .woocommerce table.shop_table .cart-buttons .cap-nhat:before {
 	content: url('img/icon-xem-them.png');
 	display: inline-block;
@@ -3071,7 +3363,7 @@ background-color: #9e9e9e;
 }
 .woocommerce table.shop_table .cart-buttons .checkout-button {
 	border-radius: 5px;
-	background: red;
+	background: #d30112;
 	font-weight: normal;
 	padding-top: 7px;
 	padding-bottom: 4px;
@@ -3086,6 +3378,15 @@ background-color: #9e9e9e;
 }
 .single-product #primary #main div.product .summary .price .woocommerce-Price-amount {
 	font-size: 25px !important;
+}
+.single-product #primary #main div.product .summary .price del .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+	color: black!important;
+}
+.single-product #primary #main div.product .summary .price del {
+	color: black!important;
+}
+.single-product #primary #main div.product .summary .price del .woocommerce-Price-amount {
+	color: black!important;
 }
 .single-product #primary #main div.product .summary .price del .woocommerce-Price-amount {
 	font-size: 16px !important;
@@ -3113,9 +3414,60 @@ background-color: #9e9e9e;
 	body.responsive .container {
 		width: calc(933px + 2rem)!important;
 	}
+	.product-item .flex a{
+		font-size: 18px;
+	}
 
+	#page .site-header{
+		margin-top: 0px!important;
+	}
+	#masthead.layout-centered .main-navigation{
+		margin: 0px;
+	}
+    .listorder .col_img button span{
+        margin-top: 0px!important;
+    }
+    #masthead{
+        margin: 0px;
+    }
+    #masthead.layout-centered .site-branding{
+        margin: 0px!important;
+        /*display: unset;*/
+    }
+    #masthead .site-branding .site-description{
+        display: none!important;
+    }
+
+    .breadcrumb{
+        width: 967px;
+    }
+    .topbar-header .container-hotline-email{
+        padding-left: 25px;
+    }
+    .camket-child:first-child{
+        padding-top: 0px!important;
+    }
+    .btn-camnhankh a {
+
+        left: 0;
+        right: 0;
+        margin: 0 50px;
+    }
+    .cart .buynow_product{
+
+         margin-left: 6px!important;
+         margin-top: 0px!important;
+         margin-bottom: 0px;
+    }
+    .main-navigation ul>li a {
+        padding-right: 0px;
+        font-size: 9pt;
+    }
+    .container-hotline-email{
+        width: 1000px;
+    }
     body.responsive .container {
-        /*max-width: 1024px!important;*/
+      width: 1024px!important;
     }
 	#page #colophon .site-info .container{
 
@@ -3151,6 +3503,134 @@ background-color: #9e9e9e;
 
  /* / ipad dọc (portrait) ----------- /  */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .home.page-template-default #page .site-header{
+        margin-top: 0px!important;
+    }
+	.woocommerce table.shop_table .cart-buttons .button{
+		 margin-bottom: 10px;
+	}
+	#masthead.layout-centered .container-inner{
+		/*margin-top: 30px;*/
+	}
+	.masthead-sentinel{
+		/*margin: 0px;*/
+	}
+    #masthead .site-branding .site-title{
+        display: none;
+    }
+	.archive.tax-product_cat #masthead{
+		margin-top: 0px!important;
+	}
+    .rdfa-breadcrumb span a{
+        font-size: 18px!important;
+    }
+    .listorder .col_img button span{
+        margin-top: 0px!important;
+    }
+    .product-slider .woocommerce ul.products li{
+        width: 7.24% !important;
+    }
+    .slick-track{
+        display: flex;
+    }
+    .category-tin-tuc #page .site-content .container .content-area .category-tin-tuc .entry-title a{
+        display: inline-block;
+    }
+    #masthead.layout-centered .site-branding{
+        margin: 0px!important;
+        display: unset;
+    }
+    #masthead .site-branding .site-description{
+        display: none;
+    }
+    .topbar-header .container-hotline-email{
+        float: right;
+    }
+    .menu-menu-container {
+        margin-top: 10px;
+    }
+	.layout-intro-row-1 .panel-grid-cell:last-child{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+    .slick-prev:before{
+        left: 10px;
+    }
+
+	.text-title {
+
+		font-size: 13px;
+	}
+	.total-camket-chitiet{
+		 margin-top: 0px;
+	}
+	.content-camket-chitiet{
+		 margin: 30px;
+		 padding: 0px;
+	}
+	.site-content .widget-area{
+		padding-left: 0px;
+	}
+	.site-main{
+		margin: 0 29% 0 0;
+	}
+	.container-link-root a p,.text-zalo-link a{
+		padding: 0px;
+	}
+
+	.title-trihoanthanhcong p{
+		font-size: 18pt;
+	}
+	.layout-chatluong-thuonghieu{
+		height: unset;
+	}
+	.title-camnhan span {
+
+		font-size: 18pt;
+	}
+	.btn-camnhankh a{
+		left: 30px;
+		right: 30px;
+	}
+
+	.container-social-network-link ul>li{
+		 margin: 0px!important;
+	}
+	.breadcrumb{
+		width: 723px;
+	}
+	.camket-child .left {
+		padding-top: 6px;
+	}
+	.main-navigation ul>li:first-child{
+		padding-left: 10px ;
+	}
+	.camket {
+		display: unset;
+	}
+
+	#masthead #primary-menu ul>li>a{
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+		font-size: 10pt!important;
+	}
+	#layout-footer .container-hotline{
+		margin: 0 0 0 60px!important;
+	}
+	.container-social-network-link{
+		padding-top: 8px!important;
+		padding-left: 55px!important;
+	}
+	#page #masthead .container a{
+		font-size: 12px!important;
+	}
+	.main-navigation ul>li a {
+		padding-right: 0px!important;
+	}
+	.main-navigation .shopping-cart .north-icon-cart{
+		padding: 0px!important;
+		top: 0px!important;
+	}
 	.container-camket{
 		padding: 60px;
 		margin: 40px;
@@ -3178,14 +3658,9 @@ background-color: #9e9e9e;
 	#secondary .widget-title:before{
 		padding-right: 10px!important;
 	}
-	.site-main {
-		margin: 0 19% 0 0;
-	}
+
 	/*.site-content .widget-area*/
-	.site-content .widget-area {
-		padding-left: 0px!important;
-		width: 25% !important;
-	}
+
 	.wc-columns-4.woocommerce #main ul.products li.product {
 		margin: 0 3.333% 2.992em 0;
 		width: 46.5%;
@@ -3228,6 +3703,9 @@ background-color: #9e9e9e;
 	.topbar-header . container-hotline-email{
 		float: right !important;
 	}
+	.topbar-header .container-hotline-email{
+		margin: -12px 0px 0px 30px;
+	}
 
 	.container-content-footer .container-link-fb{
 		/*top: 214px;*/
@@ -3239,6 +3717,12 @@ background-color: #9e9e9e;
 	.about-website-footer {
 		width: 50%;
 	}
+    .site-footer .container .adress-info a:hover{
+        /*color: #d30112!important;*/
+    }
+    #layout-footer .adress-info a:hover{
+        color: #d30112!important;
+    }
 	#layout-footer .container-hotline {
 		margin: 0 0 0 100px;
 	}
@@ -3288,9 +3772,7 @@ background-color: #9e9e9e;
 		padding: 0px;
 		margin: 0px;
 	}
-	.main-navigation ul>li a {
-		padding-right: 8px !important;
-	}
+
 	.shopping-cart{
 		height: 50px;
 	}
@@ -3298,15 +3780,78 @@ background-color: #9e9e9e;
 		top: 16px;
 
 	}
-	.menu-menu-container{
-		margin-top: 18px;
-	}
+
 }
  /*/-----------------IPAD PRO--------------------/ */
 @media (min-width: 992px) and (max-width: 1169px){
+	.camket-child {
+		padding-top: 0;
+	}
+	 #masthead.layout-centered .site-branding{
+		margin-top: 30px;
+	}
+	.layout-intro-row-1 .panel-grid-cell:last-child {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.breadcrumb.breadcrumbs .rdfa-breadcrumb {
+
+		width: 834px!important;
+
+	}
+	.camket-child:first-child {
+
+		padding-top: 60px;
+	}
+	.woocommerce button.button.alt{
+		font-size: 12px;
+	}
+	.woocommerce div.product form.cart {
+
+		display: block;
+
+		/* position: absolute; */
+		/* top: 274px; */
+	}
+	.cart .buynow_product {
+
+		padding-left: 46px;
+		padding-right: 46px;
+
+		margin-left: 60px;
+		margin-top: 7px;
+		margin-bottom: 10px;
+
+	}
+	.topbar-header .container-hotline-email{
+		/*top: 29px!;*/
+		/*right: 180px;*/
+	}
+	.container .menu-menu-container ul> li:first-child a{
+		padding-left: 10px!important;
+	}
+
+	.chinhsach span{
+		font-size: 13pt;
+	}
+	.chinhsach-footer{
+		padding-bottom: 10px!important;
+	}
+	.home.page-template-default .container-hotline-email a{
+
+	}
+	#layout-footer .container-hotline{
+		margin-left: 0px!important;
+	}
+	.container-social-network-link{
+		 padding-left: 0px!important;
+	}
 	.container-camket{
 		padding: 10px;
 		margin: 20px 0 40px 0;
+	}
+	body.responsive .container{
+		margin: 0 auto!important;
 	}
 	#page #primary-menu .menu-item-has-children:before{
 		display: none;
@@ -3329,7 +3874,7 @@ background-color: #9e9e9e;
     }
 
     #layout-footer .container-hotline {
-        margin-top: 30px;
+		padding-top: 35px!important;
         /* margin-left: 100px; */
     }
     /*.container-content-footer .container-link-fb {*/
@@ -3343,7 +3888,7 @@ background-color: #9e9e9e;
     }
     .layout-builder-dungcu-aothuat .columns-4 ul li {
         margin: 7px!important;
-         padding: 16px !important;
+         padding: 10px !important;
     }
     .about-website-footer{
         display: inline;
@@ -3357,16 +3902,20 @@ background-color: #9e9e9e;
         width: 200px;
 
     }
+	.container .menu-menu-container ul> li{
+		padding-right: 0px!important;
+	}
     .topbar-header .container-hotline-email {
         /* margin-bottom: -40px; */
         display: block;
         /* display: inline-block; */
-        margin: -10px;
+        /*margin: -10px;*/
         font-weight: bold;
         /* color: #d30112; */
         position: absolute;
-        top: 35px;
-        right: 210px;
+        top: 30px!important;
+		left: 0px;
+		right: 0px;
     }
 }
 
@@ -3413,8 +3962,232 @@ background-color: #9e9e9e;
 		/*margin: 0px;*/
 	}
 }
-/* ip6 plus */
+/*############################ ip6 plus #########################*/
 @media only screen and (max-width : 414px) {
+	.home.page-template-default .container-hotline-email span {
+		padding: 0px 10px;
+		font-size: 13px;
+	}
+	.woocommerce.single #content div.product .woocommerce-tabs .tabs li.active{
+		width: 45%;
+	}
+	.archive.post-type-archive-product #masthead.layout-centered .site-branding img{
+		/*padding-top: 24px;*/
+	}
+	#masthead.layout-centered .main-navigation, #masthead.layout-centered .site-branding{
+		display: inline-flex!important;
+		/*margin-bottom: 0px!important;*/
+	}
+	#masthead.layout-centered .site-branding img{
+		max-width: 170px!important;
+		height: auto!important;
+		display: block!important;
+		min-width: 170px!important;
+
+		/*padding-top: 26px;*/
+	}
+	#masthead.layout-centered .main-navigation{
+		padding-left: 159px;
+		/*padding-top: 23px;*/
+	}
+	#page #masthead .container a{
+		font-size: 14px!important;
+	}
+	.layout-banner .title-container .product-item{
+		margin-top: 70px;
+	}
+	.archive.tax-product_cat #masthead{
+		margin-top: 0px!important;
+	}
+    .text-title, .container-link-root{
+        margin-top: 10px!important;
+    }
+    .woocommerce table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button{
+        padding: 13px!important;
+        margin-bottom: 5px;
+    }
+    #page #secondary .woocommerce-product-search{
+        margin: 10px 0!important;
+    }
+    .title-camnhan {
+
+        line-height: 130%;
+        font-size: 19pt;
+
+    }
+
+    .listorder .col_img button span{
+        margin-top: 0px!important;
+    }
+    .slick-prev, .slick-next{
+        display: none!important;
+    }
+    #commentform .form-submit input{
+        margin: 20px 0px;
+    }
+    .comments-area{
+        margin: 0px;
+    }
+    #secondary aside{
+        margin-bottom: 0px!important;
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slick-next:before{
+        top: -246px;
+        left: 372px;
+    }
+
+    .category-tin-tuc #page .site-content .container .content-area .category-tin-tuc .entry-title a{
+        display: inline-block;
+    }
+    body.responsive #content.site-content .widget-area{
+        padding: 0px!important;
+    }
+    .archive.category .content-area, .post-template-default.single .content-area{
+        width: 100% !important;
+    }
+    .archive.category .site-content .widget-area, .post-template-default.single .site-content .widget-area{
+        width: 100% !important;
+    }
+	.breadcrumb{
+        width: 372px;
+		padding-top: 30px;
+	}
+    .header-search{
+         margin-top: 0px;}
+    .camket-child{
+        padding-top: 0px;
+    }
+    .camket .camket-child span{
+        font-size: 14px;
+    }
+
+	.widget-area .widget ul {
+		padding: 10px!important;
+	}
+	.product-template-default.single #page .site-content section h2 {
+		font-size: 13pt;
+		text-align: center;
+	}
+	.total-camket-chitiet{
+		margin-top: 0px;
+	}
+	.content-camket-chitiet{
+		padding: 15px;
+		margin: 0px;
+	}
+
+	.title-trihoanthanhcong p{
+		font-size: 11pt;
+		padding-top: 20px!important;
+	}
+
+	.camket-child .left{
+		padding-top: 6px;
+	}
+	.camket{
+		display: unset;
+	}
+	.camket-child:first-child{
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+	.layout-chatluong-thuonghieu{
+		height: unset;
+		 margin-top: 0px;
+	}
+
+	.cart .buynow_product{
+		font-size: 11px;
+		padding: 10px!important;
+	}
+	.woocommerce button.button.alt{
+		font-size: 12px;
+	}
+	.content-camket-chitiet p{
+		font-size: 12pt;
+	}
+	.container #main ul{
+		display: unset;
+		list-style: none;
+	}
+
+	.btn-camnhankh a {
+		right: 15px;
+		left: 15px;
+	}
+	.layout-intro-row-1 .panel-grid-cell:last-child{
+		margin-left: 0px;
+	margin-top: 20px;
+	}
+	.container-social-network-link{
+		 padding: 0px 0px 20px;
+	}
+	.home.page .panel-row-style {
+
+	}
+	.container-about-customer{
+		margin: 30px 0px 0px!important;
+		 padding: 0px !important;
+
+	}
+	.layout-text-tintuc{
+		margin: 30px 0 -5px 0!important;
+	}
+	.layout-text-tintuc .image-logo-tintuc{
+		margin: 0px!important;
+	}
+	.panel-grid-cell .button-showmore{
+		margin: 30px 0px!important;
+	}
+	#content .container-danhmucsp .product-item .flex{
+		top: 10px;
+	}
+	.woocommerce-loop-product__title{
+		font-size: 14px!important;
+		display: block!important;
+	}
+	#page #content .container .container-dungcu-aothuat .layout-builder-dungcu-aothuat .button-showmore{
+		margin-top: 20px!important;
+		margin-bottom: 40px!important;
+	}
+	#page #content .container #pl-5 #pg-5-1{
+		margin-bottom: 0px!important;
+	}
+	.home.page-template-default .talk-about-us span{
+		font-size: 20pt;
+	}
+	a.guide-link-product{
+		font-size: 10px;
+	}
+	.woocommerce ul.products[class*=columns-] li.product{
+		width: 46%!important;
+		padding: 8px !important;
+	}
+	#colophon .about-website-footer{
+		margin: 20px 0;
+	}
+	.home.page-template-default #content .container-danhmucsp .layout-below-container-product{
+       margin-top: 15px!important;
+    }
+	.home.page-template-default .talk-about-us p{
+		font-size: 18px;
+	}
+	#colophon .container #layout-footer{
+		margin-top: 60px;
+	}
+    .container-danhmucsp .panel-layout .product-item img {
+        height: 70px;
+    }
+    .container-danhmucsp .panel-layout .product-item{
+        margin-bottom: 0px;
+		padding: 50px 0!important;
+    }
+    .product-item .flex a{
+        margin-top: 130px;
+    }
 	.about-website-footer{
 		width: 100% !important;
 	}
@@ -3434,7 +4207,7 @@ background-color: #9e9e9e;
 		display: block!important;
 	}
 	#layout-footer .container-hotline{
-		 margin: 40px 0 40px 0px!important;
+		 margin: 20px 0px!important;
 	}
 	.talk-about-us .title-talk-about-us,.layout-text-tintuc .title-tintuc,.title-danhmucsp{
 		font-size: 24px;
@@ -3474,9 +4247,9 @@ background-color: #9e9e9e;
         top: 40px;
     }
 
-    .layout-banner img {
-        height: 250px;
-    }
+    /*.layout-banner img {*/
+        /*height: auto;*/
+    /*}*/
     .image-logo-banner img {
 
     }
@@ -3528,17 +4301,170 @@ background-color: #9e9e9e;
 		margin: 0 auto;
 
 	}
-
+    .topbar-header .header-logo a{
+        display: flex;
+        justify-content: center;
+    }
+    .home.page-template-default #pg-5-1 .container-text-danhmucsp .image-logo-dmsp{
+        margin: 0px 0 0px;
+    }
 
 }
 /* ------------------ip6 (doc)----------------------------- */
 @media only screen and (max-width : 375px) {
+	.archive.tax-product_cat #masthead{
+		margin-top: 0px!important;
+	}
+	.breadcrumb.breadcrumbs .rdfa-breadcrumb{
+		padding: 0 8px;
+	}
+	.archive.tax-product_cat .breadcrumb.breadcrumbs .rdfa-breadcrumb{
+		/*margin-top: 53px!important;*/
+		/*width: 78% !important;*/
+	}
+	.archive.post-type-archive-product #masthead.layout-centered .site-branding img{
+		padding-top: 24px;
+	}
+	#masthead.layout-centered .site-branding{
+		margin-bottom: 0px!important;
+	}
 	body.responsive .container{
 		width: auto!important;
 		margin: 0 auto;
 
 	}
+	.woocommerce.single #content div.product #respond .comment-form-rating{
+		margin: 0px;
+	}
+	.woocommerce.single #content div.product .woocommerce-tabs .tabs li.active{
+		width: 45%;
+	}
+	#masthead.layout-centered .main-navigation{
+		padding-left: 120px;
+	}
+    .slick-prev, .slick-next{
+        display: none!important;
+    }
+	.layout-intro-row-1 .panel-grid-cell:last-child{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.cart .buynow_product{
+		font-size: 11px;
+		padding: 10px!important;
+	}
+	.woocommerce button.button.alt{
+		font-size: 12px;
+	}
+	.camket-child:first-child{
+		padding-right: 10px;
+		padding-top: 10px;
+	}
 
+	body.responsive #content.site-content .widget-area{
+		padding: 20px 0 0;
+	}
+	.container #main ul{
+		 /*display: unset;*/
+		list-style: none;
+	}
+	.product-template-default.single #page .site-content section h2{
+		font-size: 13pt;
+		text-align: center;
+
+	}
+	.intro-row-1 .text-row-1 p,.layout-row-2 p, .layout-row-3 p{
+		border: none;
+	}
+
+	/*.product-template-default.single .container #main ul{*/
+		/*display: unset!important;*/
+		/*flex-wrap: unset!important;*/
+	/*}*/
+	.widget-area .widget ul{
+		padding: 10px!important;
+	}
+	.woocommerce ul.products[class*=columns-] li.product{
+		/*width: 47%!important;*/
+	}
+
+	.breadcrumb{
+		width: 100%;
+	}
+
+	.btn-camnhankh a {
+		right: 15px;
+		left: 15px;
+	}
+
+	.title-camnhan span {
+
+		font-size: 18pt;
+	}
+	.layout-chatluong-thuonghieu{
+		height: unset;
+	}
+	.title-trihoanthanhcong p{
+		font-size: 11pt;
+		padding-top: 20px!important;
+	}
+	.content-camket-chitiet p{
+		font-size: 12pt;
+	}
+	.content-camket-chitiet{
+		padding: 15px;
+		 margin: 0px;
+	}
+	.camket-child .left {
+		padding-top: 9px;
+	}
+	.layout-intro .layout-intro-row-1 .panel-grid-cell:first-child{
+		margin-bottom: 20px!important;
+	}
+	.camket .camket-child span{
+		font-size: 12px;
+	}
+
+	.total-camket-chitiet{
+		 margin-top: 0px;
+	}
+	.title-camnhan {
+		font-size: 14pt;
+	}
+	.breadcrumb.breadcrumbs .rdfa-breadcrumb{
+		width: 375px!important;
+		/* text-align: center; */
+		justify-content: center;
+	}
+	.woocommerce.single #content div.product div.images .flex-control-thumbs{
+		margin-top: 15px;
+		display: flex;
+	}
+	.cart .buynow_product{
+		 padding: 0px;
+		 /*padding-right: 70px; */
+	}
+
+	#page #content .container .container-dungcu-aothuat .layout-builder-dungcu-aothuat .button-showmore{
+		margin-top: 20px!important;
+		margin-bottom: 50px!important;
+	}
+	.home.page-template-default .talk-about-us span{
+		font-size: 28pt;
+	}
+	.product-item .flex a{
+		font-size: 18px;
+	}
+	.home.page-template-default .talk-about-us p{
+		font-size: 22pt!important;
+	}
+	.woocommerce ul.products[class*=columns-] li.product{
+		width: 45%!important;
+		font-size: 9px!important;
+	}
+	a.guide-link-product {
+		font-size: 9px;
+	}
 	.about-website-footer {
 		width: 100% !important;
 		margin-bottom: 20px!important;
@@ -3552,15 +4478,12 @@ background-color: #9e9e9e;
     .container-danhmucsp .panel-layout .product-item {
 
         /* border: 1px solid; */
-        margin-bottom: 30px;
+        margin-bottom: 0px!important;
     }
-    .layout-below-container-product{
-        margin-top: -20px!important;
-    }
-    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
-        width: 100%;
+    /*.layout-below-container-product{*/
+        /*margin-top: -20px!important;*/
+    /*}*/
 
-    }
    
 }
 /* ------------------ip6 (ngang)----------------------------- */
@@ -3583,7 +4506,7 @@ background-color: #9e9e9e;
     .container-danhmucsp .panel-layout .product-item {
 
         /* border: 1px solid; */
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     .layout-below-container-product{
         margin-top: -20px!important;
@@ -3612,9 +4535,9 @@ background-color: #9e9e9e;
         margin-bottom: 0px;
         margin-top: 55px;
     }
-    .layout-below-container-product{
-        margin-top: -20px!important;
-    }
+    /*.layout-below-container-product{*/
+        /*margin-top: -20px!important;*/
+    /*}*/
     .layout-total-tintucsk button{
         right: -20px;
     }
@@ -3723,5 +4646,5 @@ background-color: #9e9e9e;
 	margin: 0 8px;
 	text-align: center;
 	background: #f1f1f1;
-	width: 6.24% !important;
+	width: 6.24% ;
 }

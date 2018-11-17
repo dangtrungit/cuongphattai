@@ -89,16 +89,16 @@ register_sidebar(array(
     'before_title' => '',
     'after_title' => ''
 ));
-/*hien thi thông tin vận chuyển*/
-register_sidebar(array(
-    'name' => 'hien thi thong tin van chuyen',
-    'id' => 'pk-thongtin-vanchuyen',
-    'description' => 'Hiển thị thông tin vận chuyển',
-    'before_widget' => '<div id="pk-thongtin-vanchuyen" class="widget pk-thongtin-vanchuyen-widget">',
-    'after_widget' => '</div>',
-    'before_title' => '',
-    'after_title' => ''
-));
+///*hien thi thông tin vận chuyển*/
+//register_sidebar(array(
+//    'name' => 'hien thi thong tin van chuyen',
+//    'id' => 'pk-thongtin-vanchuyen',
+//    'description' => 'Hiển thị thông tin vận chuyển',
+//    'before_widget' => '<div id="pk-thongtin-vanchuyen" class="widget pk-thongtin-vanchuyen-widget">',
+//    'after_widget' => '</div>',
+//    'before_title' => '',
+//    'after_title' => ''
+//));
 /*hien thi video hướng*/
 //register_sidebar(array(
 //    'name' => 'hien thi thong tin van chuyen',
@@ -164,6 +164,7 @@ add_action( 'woocommerce_single_product_summary', 'test', 17 );
 function test(){
     echo "<div class='free-ship' ><p>Vận chuyển</p><img src='".get_home_url()."/wp-content/uploads/2018/11/shipfreeoto.png'><span>Free ship nội thành</span></div>";
 }
+
 add_action( 'woocommerce_single_product_summary', 'camket', 60);
 function camket(){
    echo "<div class='camket' >
@@ -198,4 +199,10 @@ register_sidebar(array(
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>'
 ));
-
+/*--------Hiện số lượng sản phẩm ở sản phẩm tương tự---------*/
+function siteorigin_north_woocommerce_related_product_args( $args ) {
+    $args['columns'] = 4;
+    $args['posts_per_page'] = 4;
+    return $args;
+}
+//endif;

@@ -1424,8 +1424,9 @@ body.page-layout-stripped #main.site-main {
       display: inline-block; }
   #masthead.layout-centered .main-navigation {
     text-align: center; }
-  #masthead.layout-centered .site-branding, #masthead.layout-centered .main-navigation {
-    display: block; }
+  /*#masthead.layout-centered .site-branding, #masthead.layout-centered .main-navigation {*/
+    /*!*display: block;*!*/
+  /*}*/
   body.responsive #masthead {
     min-width: 0; }
 
