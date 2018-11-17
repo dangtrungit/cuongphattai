@@ -3686,6 +3686,7 @@ background-color: #9e9e9e;
         max-width: 26%;
          margin-bottom: 0px;
         margin-top: 50px;
+		/*display: none;*/
     }
     .layout-below-container-product{
         margin-top: -20px!important;
@@ -3786,6 +3787,9 @@ background-color: #9e9e9e;
 @media (min-width: 992px) and (max-width: 1169px){
 	.camket-child {
 		padding-top: 0;
+	}
+	.container-hotline-email span{
+		font-size: 18px;
 	}
 	 #masthead.layout-centered .site-branding{
 		margin-top: 30px;
@@ -3968,6 +3972,10 @@ background-color: #9e9e9e;
 		padding: 0px 10px;
 		font-size: 13px;
 	}
+	.container-hotline-email span{
+		font-size: 13px;
+		padding: 0 6px;
+	}
 	.woocommerce.single #content div.product .woocommerce-tabs .tabs li.active{
 		width: 45%;
 	}
@@ -3977,6 +3985,9 @@ background-color: #9e9e9e;
 	#masthead.layout-centered .main-navigation, #masthead.layout-centered .site-branding{
 		display: inline-flex!important;
 		/*margin-bottom: 0px!important;*/
+	}
+	#masthead.layout-centered .site-branding{
+		margin: 0px!important;
 	}
 	#masthead.layout-centered .site-branding img{
 		max-width: 170px!important;

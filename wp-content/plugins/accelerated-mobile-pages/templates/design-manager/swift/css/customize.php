@@ -683,6 +683,7 @@ font-style: italic;
     background-size: cover;
 
 }
+
 .body.amp-single .guide-link-product{
     display: block;
     font-size: 13pt;
@@ -740,6 +741,9 @@ font-style: italic;
 .body.amp-single .price.not-sale .woocommerce-Price-amount.amount{
 font-size: 12pt;
 padding: 4px 2px;
+}
+.body.amp-single .i-amphtml-slide-item.i-amphtml-slide-item-show{
+   order:4!important;
 }
 <!--.body.amp-single .theme_4 .testi-wrapper .testi-details .testi-text .row{-->
 <!--    display: none;-->
